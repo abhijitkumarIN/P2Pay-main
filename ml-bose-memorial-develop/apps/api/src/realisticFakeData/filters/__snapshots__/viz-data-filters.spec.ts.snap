@@ -1,0 +1,846 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`realisticFakeData viz data filters using operation combination should filter on an attribute with single values using a combination of operations 1`] = `
+Array [
+  Object {
+    "barista": Array [
+      Object {
+        "displayValue": "Joelle",
+      },
+      Object {
+        "displayValue": "Randal",
+      },
+      Object {
+        "displayValue": "Della",
+      },
+      Object {
+        "displayValue": "Lazaro",
+      },
+      Object {
+        "displayValue": "Lorenz",
+      },
+      Object {
+        "displayValue": "Ellen",
+      },
+      Object {
+        "displayValue": "Alvera",
+      },
+      Object {
+        "displayValue": "Kylee",
+      },
+      Object {
+        "displayValue": "Bruce",
+      },
+      Object {
+        "displayValue": "Jackeline",
+      },
+      Object {
+        "displayValue": "Clementina",
+      },
+      Object {
+        "displayValue": "Kailey",
+      },
+      Object {
+        "displayValue": "Lillie",
+      },
+      Object {
+        "displayValue": "Cayla",
+      },
+      Object {
+        "displayValue": "Anastacio",
+      },
+      Object {
+        "displayValue": "Elliot",
+      },
+      Object {
+        "displayValue": "Valentin",
+      },
+      Object {
+        "displayValue": "Virginie",
+      },
+      Object {
+        "displayValue": "Amir",
+      },
+      Object {
+        "displayValue": "Mohamed",
+      },
+    ],
+    "coffee": Array [
+      Object {
+        "displayValue": "Arabic",
+      },
+      Object {
+        "displayValue": "Tropical",
+      },
+      Object {
+        "displayValue": "Blend",
+      },
+      Object {
+        "displayValue": "Yemen",
+      },
+      Object {
+        "displayValue": "Nordic",
+      },
+      Object {
+        "displayValue": "Brazilian",
+      },
+      Object {
+        "displayValue": "Arabic",
+      },
+      Object {
+        "displayValue": "Tropical",
+      },
+      Object {
+        "displayValue": "Blend",
+      },
+      Object {
+        "displayValue": "Yemen",
+      },
+      Object {
+        "displayValue": "Nordic",
+      },
+      Object {
+        "displayValue": "Brazilian",
+      },
+      Object {
+        "displayValue": "Arabic",
+      },
+      Object {
+        "displayValue": "Tropical",
+      },
+      Object {
+        "displayValue": "Blend",
+      },
+      Object {
+        "displayValue": "Yemen",
+      },
+      Object {
+        "displayValue": "Nordic",
+      },
+      Object {
+        "displayValue": "Brazilian",
+      },
+      Object {
+        "displayValue": "Arabic",
+      },
+      Object {
+        "displayValue": "Tropical",
+      },
+    ],
+    "coffeeQuality": Object {
+      "displayValue": "Gross",
+    },
+    "customer": Array [
+      Object {
+        "displayValue": "Jonathan",
+      },
+      Object {
+        "displayValue": "Kayli",
+      },
+      Object {
+        "displayValue": "Elisha",
+      },
+      Object {
+        "displayValue": "Lilly",
+      },
+      Object {
+        "displayValue": "Melody",
+      },
+      Object {
+        "displayValue": "Katrina",
+      },
+      Object {
+        "displayValue": "Albin",
+      },
+      Object {
+        "displayValue": "Jillian",
+      },
+      Object {
+        "displayValue": "Milton",
+      },
+      Object {
+        "displayValue": "Yolanda",
+      },
+      Object {
+        "displayValue": "Alford",
+      },
+      Object {
+        "displayValue": "Hipolito",
+      },
+      Object {
+        "displayValue": "Myrtie",
+      },
+      Object {
+        "displayValue": "Taryn",
+      },
+      Object {
+        "displayValue": "Lulu",
+      },
+      Object {
+        "displayValue": "Shad",
+      },
+      Object {
+        "displayValue": "Lamont",
+      },
+      Object {
+        "displayValue": "Marlin",
+      },
+      Object {
+        "displayValue": "Gennaro",
+      },
+      Object {
+        "displayValue": "Kelvin",
+      },
+    ],
+    "description": Object {
+      "displayValue": "Natus distinctio et et. Placeat libero adipisci quis voluptatem similique iure. Quod eum aliquam sunt.",
+    },
+    "displayValue": "Capuchino Feliz",
+    "efficiencyPercent": Array [
+      Object {
+        "displayValue": 78,
+      },
+      Object {
+        "displayValue": 8,
+      },
+      Object {
+        "displayValue": 19,
+      },
+      Object {
+        "displayValue": 62,
+      },
+      Object {
+        "displayValue": 77,
+      },
+      Object {
+        "displayValue": 42,
+      },
+      Object {
+        "displayValue": 46,
+      },
+      Object {
+        "displayValue": 98,
+      },
+      Object {
+        "displayValue": 89,
+      },
+      Object {
+        "displayValue": 41,
+      },
+      Object {
+        "displayValue": 94,
+      },
+      Object {
+        "displayValue": 86,
+      },
+      Object {
+        "displayValue": 29,
+      },
+      Object {
+        "displayValue": 56,
+      },
+      Object {
+        "displayValue": 16,
+      },
+      Object {
+        "displayValue": 29,
+      },
+      Object {
+        "displayValue": 75,
+      },
+      Object {
+        "displayValue": 53,
+      },
+      Object {
+        "displayValue": 64,
+      },
+      Object {
+        "displayValue": 32,
+      },
+    ],
+    "id": "7ec2f25e-fa6a-499c-acab-b182bb76c1f3",
+    "importantEvent": Array [
+      Object {
+        "displayValue": 1631961521504,
+      },
+      Object {
+        "displayValue": 1632306041352,
+      },
+      Object {
+        "displayValue": 1626468570723,
+      },
+      Object {
+        "displayValue": 1625940952510,
+      },
+      Object {
+        "displayValue": 1626381616693,
+      },
+      Object {
+        "displayValue": 1632033815881,
+      },
+      Object {
+        "displayValue": 1623988753525,
+      },
+      Object {
+        "displayValue": 1628701512689,
+      },
+      Object {
+        "displayValue": 1625216906683,
+      },
+      Object {
+        "displayValue": 1627180664623,
+      },
+      Object {
+        "displayValue": 1626397142316,
+      },
+      Object {
+        "displayValue": 1630690046388,
+      },
+      Object {
+        "displayValue": 1623576350589,
+      },
+      Object {
+        "displayValue": 1625096996596,
+      },
+      Object {
+        "displayValue": 1631860940840,
+      },
+      Object {
+        "displayValue": 1623252763463,
+      },
+      Object {
+        "displayValue": 1631122628341,
+      },
+      Object {
+        "displayValue": 1631680149479,
+      },
+      Object {
+        "displayValue": 1626233072318,
+      },
+      Object {
+        "displayValue": 1629280166409,
+      },
+    ],
+    "inauguration": Object {
+      "displayValue": 1623130112150,
+    },
+    "isOpen": Object {
+      "displayValue": true,
+    },
+    "managerReview": Object {
+      "displayValue": 4,
+    },
+    "marketValue": Object {
+      "displayValue": 31,
+    },
+    "menu": Object {
+      "displayValue": -997,
+    },
+    "monthlyBrandingColor": Object {
+      "displayValue": "rgba(188,229,78,0.65)",
+    },
+    "occupationPercent": Object {
+      "displayValue": 66,
+    },
+    "previousBrandingColors": Array [
+      Object {
+        "displayValue": "rgba(195,160,96,0.05)",
+      },
+      Object {
+        "displayValue": "rgba(61,109,133,0.35)",
+      },
+      Object {
+        "displayValue": "rgba(238,117,109,0.05)",
+      },
+      Object {
+        "displayValue": "rgba(10,156,245,0.98)",
+      },
+      Object {
+        "displayValue": "rgba(112,18,123,0.97)",
+      },
+      Object {
+        "displayValue": "rgba(196,105,250,0.05)",
+      },
+      Object {
+        "displayValue": "rgba(208,32,3,0.24)",
+      },
+      Object {
+        "displayValue": "rgba(8,65,62,0.79)",
+      },
+      Object {
+        "displayValue": "rgba(120,40,149,0.89)",
+      },
+      Object {
+        "displayValue": "rgba(247,116,111,0.62)",
+      },
+      Object {
+        "displayValue": "rgba(154,243,138,0.91)",
+      },
+      Object {
+        "displayValue": "rgba(145,61,249,0.2)",
+      },
+      Object {
+        "displayValue": "rgba(153,113,253,0.69)",
+      },
+      Object {
+        "displayValue": "rgba(168,120,79,0.28)",
+      },
+      Object {
+        "displayValue": "rgba(94,187,43,0.4)",
+      },
+      Object {
+        "displayValue": "rgba(75,248,244,0.58)",
+      },
+      Object {
+        "displayValue": "rgba(248,1,123,0.21)",
+      },
+      Object {
+        "displayValue": "rgba(108,167,64,0.7)",
+      },
+      Object {
+        "displayValue": "rgba(246,236,65,0.18)",
+      },
+      Object {
+        "displayValue": "rgba(167,11,32,0.48)",
+      },
+    ],
+    "reviewLevel": Array [
+      Object {
+        "displayValue": "Terrible",
+      },
+      Object {
+        "displayValue": "Bad",
+      },
+      Object {
+        "displayValue": "Neutral",
+      },
+      Object {
+        "displayValue": "Good",
+      },
+      Object {
+        "displayValue": "Excellent",
+      },
+      Object {
+        "displayValue": "Terrible",
+      },
+      Object {
+        "displayValue": "Bad",
+      },
+      Object {
+        "displayValue": "Neutral",
+      },
+      Object {
+        "displayValue": "Good",
+      },
+      Object {
+        "displayValue": "Excellent",
+      },
+      Object {
+        "displayValue": "Terrible",
+      },
+      Object {
+        "displayValue": "Bad",
+      },
+      Object {
+        "displayValue": "Neutral",
+      },
+      Object {
+        "displayValue": "Good",
+      },
+      Object {
+        "displayValue": "Excellent",
+      },
+      Object {
+        "displayValue": "Terrible",
+      },
+      Object {
+        "displayValue": "Bad",
+      },
+      Object {
+        "displayValue": "Neutral",
+      },
+      Object {
+        "displayValue": "Good",
+      },
+      Object {
+        "displayValue": "Excellent",
+      },
+    ],
+    "reviewScore": Array [
+      Object {
+        "displayValue": 2.2461049910634756,
+      },
+      Object {
+        "displayValue": 4.193739155307412,
+      },
+      Object {
+        "displayValue": -9.915895471349359,
+      },
+      Object {
+        "displayValue": 9.26987131126225,
+      },
+      Object {
+        "displayValue": 9.445016561076045,
+      },
+      Object {
+        "displayValue": -2.3312496999278665,
+      },
+      Object {
+        "displayValue": 4.182800962589681,
+      },
+      Object {
+        "displayValue": 9.192078560590744,
+      },
+      Object {
+        "displayValue": 0.1174302026629448,
+      },
+      Object {
+        "displayValue": -9.134332025423646,
+      },
+      Object {
+        "displayValue": 8.928580582141876,
+      },
+      Object {
+        "displayValue": -0.08155723102390766,
+      },
+      Object {
+        "displayValue": -0.558581817895174,
+      },
+      Object {
+        "displayValue": 0.6128637865185738,
+      },
+      Object {
+        "displayValue": 8.118717051111162,
+      },
+      Object {
+        "displayValue": 6.436495571397245,
+      },
+      Object {
+        "displayValue": 8.910549702122808,
+      },
+      Object {
+        "displayValue": 5.513424929231405,
+      },
+      Object {
+        "displayValue": 5.649852980859578,
+      },
+      Object {
+        "displayValue": 0.168510596267879,
+      },
+    ],
+    "server": Array [
+      Object {
+        "displayValue": "Lorenz",
+      },
+      Object {
+        "displayValue": "June",
+      },
+      Object {
+        "displayValue": "Treva",
+      },
+      Object {
+        "displayValue": "Orville",
+      },
+      Object {
+        "displayValue": "Rolando",
+      },
+      Object {
+        "displayValue": "Glenda",
+      },
+      Object {
+        "displayValue": "Cornelius",
+      },
+      Object {
+        "displayValue": "Ed",
+      },
+      Object {
+        "displayValue": "Rosalia",
+      },
+      Object {
+        "displayValue": "Haskell",
+      },
+      Object {
+        "displayValue": "Mylene",
+      },
+      Object {
+        "displayValue": "Hassie",
+      },
+      Object {
+        "displayValue": "Darion",
+      },
+      Object {
+        "displayValue": "Maurice",
+      },
+      Object {
+        "displayValue": "Rylan",
+      },
+      Object {
+        "displayValue": "Naomie",
+      },
+      Object {
+        "displayValue": "Guillermo",
+      },
+      Object {
+        "displayValue": "Cleveland",
+      },
+      Object {
+        "displayValue": "Ethelyn",
+      },
+      Object {
+        "displayValue": "Jarvis",
+      },
+    ],
+    "squareFootage": Object {
+      "displayValue": 2279.6336411265656,
+    },
+    "table": Array [
+      Object {
+        "displayValue": 197,
+      },
+      Object {
+        "displayValue": -541,
+      },
+      Object {
+        "displayValue": 772,
+      },
+      Object {
+        "displayValue": 662,
+      },
+      Object {
+        "displayValue": 437,
+      },
+      Object {
+        "displayValue": -319,
+      },
+      Object {
+        "displayValue": -982,
+      },
+      Object {
+        "displayValue": -439,
+      },
+      Object {
+        "displayValue": 979,
+      },
+      Object {
+        "displayValue": 160,
+      },
+      Object {
+        "displayValue": -344,
+      },
+      Object {
+        "displayValue": -27,
+      },
+      Object {
+        "displayValue": -32,
+      },
+      Object {
+        "displayValue": 105,
+      },
+      Object {
+        "displayValue": -772,
+      },
+      Object {
+        "displayValue": 260,
+      },
+      Object {
+        "displayValue": 42,
+      },
+      Object {
+        "displayValue": 791,
+      },
+      Object {
+        "displayValue": -319,
+      },
+      Object {
+        "displayValue": 285,
+      },
+    ],
+    "userReview": Array [
+      Object {
+        "displayValue": 27,
+      },
+      Object {
+        "displayValue": 37,
+      },
+      Object {
+        "displayValue": 92,
+      },
+      Object {
+        "displayValue": 19,
+      },
+      Object {
+        "displayValue": 51,
+      },
+      Object {
+        "displayValue": 99,
+      },
+      Object {
+        "displayValue": 24,
+      },
+      Object {
+        "displayValue": 53,
+      },
+      Object {
+        "displayValue": 87,
+      },
+      Object {
+        "displayValue": 14,
+      },
+      Object {
+        "displayValue": 66,
+      },
+      Object {
+        "displayValue": 74,
+      },
+      Object {
+        "displayValue": 20,
+      },
+      Object {
+        "displayValue": 65,
+      },
+      Object {
+        "displayValue": 68,
+      },
+      Object {
+        "displayValue": 8,
+      },
+      Object {
+        "displayValue": 59,
+      },
+      Object {
+        "displayValue": 82,
+      },
+      Object {
+        "displayValue": 1,
+      },
+      Object {
+        "displayValue": 57,
+      },
+    ],
+    "userWrittenReviews": Array [
+      Object {
+        "displayValue": "Nihil quae itaque quasi. Ratione saepe occaecati molestiae est. Voluptate porro non repellat et aliquam. Dolores saepe ad aliquam.",
+      },
+      Object {
+        "displayValue": "Eum eos architecto temporibus fugiat repellendus commodi. Cum temporibus temporibus aliquam dolores. Consequatur iure deleniti. Amet et non sed fuga quos. Fuga ullam dolore vitae minus soluta laudantium est commodi.",
+      },
+      Object {
+        "displayValue": "Sed sapiente sit et dolore similique voluptatem et. Sit omnis quia repellat et eveniet. Corporis tempore sit sed qui assumenda nulla magni enim reprehenderit. Qui enim consequatur est neque.",
+      },
+      Object {
+        "displayValue": "Occaecati vero tenetur omnis aliquam labore ut doloremque reprehenderit exercitationem. Consequuntur voluptatum enim sint mollitia aut minima. Neque perspiciatis ut quo id sit cumque quam.",
+      },
+      Object {
+        "displayValue": "Voluptatem cupiditate modi culpa delectus ab voluptates et. Neque quas eum labore ut. Pariatur aperiam aut tempora adipisci neque labore omnis qui. Nisi magni accusamus eaque voluptatem laborum aut iure eveniet.",
+      },
+      Object {
+        "displayValue": "Voluptate fugiat in. Quo aut illo officia. Quod ullam doloribus in mollitia iste porro placeat at. Ut qui sequi iusto quas hic.",
+      },
+      Object {
+        "displayValue": "Unde expedita molestiae sed aut suscipit. Consequuntur culpa saepe ea et aut beatae tenetur. Est et voluptates eum adipisci rerum ea et. Maiores aut perspiciatis officiis sint optio ipsam ut suscipit.",
+      },
+      Object {
+        "displayValue": "Quas assumenda velit aliquid et. Officiis eum amet nesciunt commodi debitis. Qui neque suscipit aperiam repudiandae mollitia inventore. Facilis qui sit ea nisi minima tempore impedit asperiores.",
+      },
+      Object {
+        "displayValue": "Animi iusto vel velit sint dolor natus cum ut. Suscipit praesentium quisquam quam beatae delectus facilis. Voluptas autem et dolores commodi aut.",
+      },
+      Object {
+        "displayValue": "Illum ratione rerum rerum. Adipisci et consequatur quia. Magnam quo nihil ullam accusantium aut. Est nulla nostrum.",
+      },
+      Object {
+        "displayValue": "Quis ipsa dolorem ullam. Eos sequi repellendus sunt quo molestiae dolore. Tempore suscipit id minus. Et et quam quibusdam dolorum laudantium.",
+      },
+      Object {
+        "displayValue": "Repellat iure repudiandae asperiores quas. Dolor ut quo sint et error voluptas voluptatibus. Maiores facilis velit officiis sed nemo inventore voluptatem et. Minima aliquam possimus alias veniam molestiae sit quis. Laborum sequi rerum consequatur sit quia maiores.",
+      },
+      Object {
+        "displayValue": "Laborum harum harum est repudiandae. Aliquam culpa fugit delectus. Et hic fugit vitae molestiae dicta.",
+      },
+      Object {
+        "displayValue": "Aliquid sit eum dignissimos. Soluta quo error sequi.",
+      },
+      Object {
+        "displayValue": "Quidem aut non ut expedita quidem. Laudantium necessitatibus amet amet.",
+      },
+      Object {
+        "displayValue": "Suscipit facilis rerum qui porro. Explicabo rem earum ipsum nihil et aspernatur ducimus provident et.",
+      },
+      Object {
+        "displayValue": "Blanditiis esse modi ab est harum. Reprehenderit eaque debitis. Maiores explicabo porro. Sed doloremque quia dolorem blanditiis voluptatem.",
+      },
+      Object {
+        "displayValue": "Quia rerum ab nulla dolore soluta necessitatibus itaque quia. Excepturi ut ut magni rem neque ut aspernatur consequatur. Ut rerum assumenda voluptate quia. Deserunt voluptas ducimus dolorem maiores. Suscipit quaerat voluptate velit consequuntur sit aspernatur.",
+      },
+      Object {
+        "displayValue": "Ad natus optio tempora omnis. Commodi quis vel cum. Vitae modi id et reiciendis. Odit qui quaerat.",
+      },
+      Object {
+        "displayValue": "Modi eligendi aliquam unde mollitia libero maxime. Sunt aspernatur aut minima praesentium quo unde explicabo. Similique labore magnam provident ut incidunt voluptate ut pariatur.",
+      },
+    ],
+    "yearlyIncome": Array [
+      Object {
+        "displayValue": 89,
+      },
+      Object {
+        "displayValue": 4,
+      },
+      Object {
+        "displayValue": 79,
+      },
+      Object {
+        "displayValue": 18,
+      },
+      Object {
+        "displayValue": 62,
+      },
+      Object {
+        "displayValue": 50,
+      },
+      Object {
+        "displayValue": 57,
+      },
+      Object {
+        "displayValue": 45,
+      },
+      Object {
+        "displayValue": 76,
+      },
+      Object {
+        "displayValue": 10,
+      },
+      Object {
+        "displayValue": 42,
+      },
+      Object {
+        "displayValue": 62,
+      },
+      Object {
+        "displayValue": 62,
+      },
+      Object {
+        "displayValue": 49,
+      },
+      Object {
+        "displayValue": 61,
+      },
+      Object {
+        "displayValue": 43,
+      },
+      Object {
+        "displayValue": 95,
+      },
+      Object {
+        "displayValue": 11,
+      },
+      Object {
+        "displayValue": 86,
+      },
+      Object {
+        "displayValue": 91,
+      },
+    ],
+  },
+]
+`;

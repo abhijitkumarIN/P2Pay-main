@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`api-service filters should return a combination of all operations if "paramsBasedOnRoute" has "_in", "max", "min", "from" and "to" operations 1`] = `
+Object {
+  "combinator": "AND",
+  "rules": Array [
+    Object {
+      "field": "coffeeShop",
+      "operation": "=",
+      "value": Object {
+        "displayValue": "Chocolatito",
+      },
+    },
+    Object {
+      "field": "salary",
+      "operation": "=",
+      "value": Object {
+        "displayValue": 20,
+      },
+    },
+    Object {
+      "field": "salary",
+      "operation": "<=",
+      "value": Object {
+        "displayValue": 23,
+      },
+    },
+    Object {
+      "field": "salary",
+      "operation": ">=",
+      "value": Object {
+        "displayValue": 14,
+      },
+    },
+    Object {
+      "field": "timestamp",
+      "operation": ">=",
+      "value": Object {
+        "displayValue": 1633101300000,
+      },
+    },
+    Object {
+      "field": "timestamp",
+      "operation": "<=",
+      "value": Object {
+        "displayValue": 1633274100000,
+      },
+    },
+  ],
+}
+`;

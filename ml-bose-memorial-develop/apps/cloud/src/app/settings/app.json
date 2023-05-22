@@ -1,0 +1,11 @@
+{
+  "companyName": "ML Bose",
+  "defaultHomePage": "/registration",
+  "exportConfig": "StandardExport",
+  "layout": {
+    "position": "nav-left"
+  },
+  "productName": "P-2-Pay",
+  "crossLinkingInteraction": "On click",
+  "rootVersion": "5.6.1.476.e427364c5"
+}

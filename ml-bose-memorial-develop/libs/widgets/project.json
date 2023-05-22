@@ -1,0 +1,32 @@
+{
+  "root": "libs/widgets",
+  "sourceRoot": "libs/widgets/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/widgets/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/widgets"],
+      "options": {
+        "jestConfig": "libs/widgets/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "build": {
+      "executor": "@nrwl/node:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/widgets",
+        "tsConfig": "libs/widgets/tsconfig.lib.json",
+        "main": "libs/widgets/src/index.ts",
+        "assets": []
+      }
+    }
+  },
+  "tags": []
+}

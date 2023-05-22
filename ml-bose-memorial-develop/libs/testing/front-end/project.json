@@ -1,0 +1,22 @@
+{
+  "root": "libs/testing/front-end",
+  "sourceRoot": "libs/testing/front-end/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/testing/front-end/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/testing/front-end"],
+      "options": {
+        "jestConfig": "libs/testing/front-end/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

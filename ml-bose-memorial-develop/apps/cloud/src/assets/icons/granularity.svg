@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>granularity</title>
+    <g id="granularity" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="currentColor" opacity="0.33" x="1" y="19" width="4" height="2"></rect>
+        <rect id="Rectangle" fill="currentColor" opacity="0.5" x="6" y="19" width="4" height="2"></rect>
+        <rect id="Rectangle" fill="currentColor" opacity="0.5" x="6" y="16" width="4" height="2"></rect>
+        <rect id="Rectangle" fill="currentColor" opacity="0.66" x="11" y="19" width="4" height="2"></rect>
+        <rect id="Rectangle" fill="currentColor" opacity="0.66" x="11" y="16" width="4" height="2"></rect>
+        <rect id="Rectangle" fill="currentColor" opacity="0.66" x="11" y="13" width="4" height="2"></rect>
+        <rect id="Rectangle" fill="currentColor" x="16" y="19" width="4" height="2"></rect>
+        <rect id="Rectangle" fill="currentColor" x="16" y="16" width="4" height="2"></rect>
+        <rect id="Rectangle" fill="currentColor" x="16" y="13" width="4" height="2"></rect>
+    </g>
+</svg>

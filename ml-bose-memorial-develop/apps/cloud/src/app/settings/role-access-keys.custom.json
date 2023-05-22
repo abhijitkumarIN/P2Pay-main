@@ -1,0 +1,42 @@
+{
+  "NAVIGATION": {
+    "CHILDREN": {
+      "REGISTRATION": {
+        "PERMISSIONS": {
+          "Doctor": "SHOW",
+          "Patient": "SHOW",
+          "Donor": "SHOW"
+        }
+      }
+    }
+  },
+  "REGISTRATION": {
+    "CHILDREN": {
+      "VIEWS": {
+        "CHILDREN": {
+          "PCPREGISTRATION": {
+            "PERMISSIONS": {
+              "Doctor": "SHOW",
+              "Patient": "HIDE",
+              "Donor": "HIDE"
+            }
+          },
+          "DONORREGISTRATION": {
+            "PERMISSIONS": {
+              "Doctor": "HIDE",
+              "Patient": "HIDE",
+              "Donor": "SHOW"
+            }
+          },
+          "MEMBERREGISTRATION": {
+            "PERMISSIONS": {
+              "Doctor": "HIDE",
+              "Patient": "SHOW",
+              "Donor": "HIDE"
+            }
+          }
+        }
+      }
+    }
+  }
+}

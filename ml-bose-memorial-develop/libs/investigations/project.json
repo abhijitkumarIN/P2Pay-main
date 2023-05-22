@@ -1,0 +1,22 @@
+{
+  "root": "libs/investigations",
+  "sourceRoot": "libs/investigations/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/investigations/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/investigations"],
+      "options": {
+        "jestConfig": "libs/investigations/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

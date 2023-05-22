@@ -1,0 +1,21 @@
+{
+  "root": "libs/things",
+  "sourceRoot": "libs/things/src",
+  "projectType": "library",
+  "architect": {
+    "lint": {
+      "builder": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/things/**/*.ts"]
+      }
+    },
+    "test": {
+      "builder": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/things"],
+      "options": {
+        "jestConfig": "libs/things/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

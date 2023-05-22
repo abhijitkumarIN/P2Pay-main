@@ -1,0 +1,187 @@
+{
+  "NAVIGATION": {
+    "CHILDREN": {
+      "DOCTORDETAILS": {
+        "PERMISSIONS": {
+          "ADMIN": "SHOW",
+          "GUEST": "SHOW"
+        }
+      },
+      "FINDADOCTOR": {
+        "PERMISSIONS": {
+          "ADMIN": "SHOW",
+          "GUEST": "SHOW"
+        }
+      },
+      "MEMBERDETAILS": {
+        "PERMISSIONS": {
+          "ADMIN": "SHOW",
+          "GUEST": "SHOW"
+        }
+      },
+      "REGISTRATION": {
+        "PERMISSIONS": {
+          "ADMIN": "SHOW",
+          "GUEST": "SHOW"
+        }
+      }
+    },
+    "PERMISSIONS": {
+      "ADMIN": "SHOW",
+      "GUEST": "SHOW"
+    }
+  },
+  "DOCTORDETAILS": {
+    "CHILDREN": {
+      "WIDGETS": {
+        "CHILDREN": {
+          "0DC21558-6C6C-4F10-8562-5658318FF8DB": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "766BFBAC-D2E1-4544-B72F-939CCAA9EDF3": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      },
+      "VIEWS": {
+        "CHILDREN": {
+          "DASHBOARD": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      }
+    }
+  },
+  "FINDADOCTOR": {
+    "CHILDREN": {
+      "WIDGETS": {
+        "CHILDREN": {
+          "15778BDF-5ED3-49B8-B1C2-7B79A99FA00C": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "19A4362F-759A-4A7D-BA27-C421B5DE97B4": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "A8343AB6-DA03-4BB2-BE6E-27FEA7C48F5A": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "D69D1193-A237-43A8-92C1-9DC2D7D919C4": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      },
+      "VIEWS": {
+        "CHILDREN": {
+          "ELIGIBLEPCPDASHBOARD": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "ELIGIBLEPCPLIST": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      }
+    }
+  },
+  "MEMBERDETAILS": {
+    "CHILDREN": {
+      "WIDGETS": {
+        "CHILDREN": {
+          "2E0F566D-8CBC-4D18-B8AF-45751BD1A1E2": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "8C2F4A58-4C24-4144-BF2B-36A3F21546F8": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "99709B90-9301-4B69-A48E-85D585C6B087": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      },
+      "VIEWS": {
+        "CHILDREN": {
+          "DASHBOARD1": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "TRANSACTIONS": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      }
+    }
+  },
+  "REGISTRATION": {
+    "CHILDREN": {
+      "VIEWS": {
+        "CHILDREN": {
+          "DONORREGISTRATION": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "MEMBERREGISTRATION": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "PCPREGISTRATION": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      }
+    }
+  },
+  "USERPREFERENCES": {
+    "PERMISSIONS": {
+      "ADMIN": "SHOW",
+      "GUEST": "SHOW"
+    },
+    "CHILDREN": {}
+  }
+}

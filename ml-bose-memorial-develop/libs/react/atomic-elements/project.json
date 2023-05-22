@@ -1,0 +1,33 @@
+{
+  "root": "libs/react/atomic-elements",
+  "sourceRoot": "libs/react/atomic-elements/src",
+  "projectType": "library",
+  "generators": {},
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/react/atomic-elements/**/*.js",
+          "libs/react/atomic-elements/**/*.jsx",
+          "libs/react/atomic-elements/**/*.ts",
+          "libs/react/atomic-elements/**/*.tsx",
+          "libs/react/atomic-elements/**/*.spec.ts",
+          "libs/react/atomic-elements/**/*.spec.tsx",
+          "libs/react/atomic-elements/**/*.spec.js",
+          "libs/react/atomic-elements/**/*.spec.jsx",
+          "libs/react/atomic-elements/**/*.d.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "libs/react/atomic-elements/jest.config.js",
+        "passWithNoTests": true
+      },
+      "outputs": ["coverage/libs/react/atomic-elements"]
+    }
+  },
+  "tags": []
+}

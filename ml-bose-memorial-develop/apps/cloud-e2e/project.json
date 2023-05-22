@@ -1,0 +1,27 @@
+{
+  "root": "apps/cloud-e2e",
+  "sourceRoot": "apps/cloud-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/cloud-e2e/cypress.json",
+        "tsConfig": "apps/cloud-e2e/tsconfig.e2e.json",
+        "devServerTarget": "cloud:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "cloud:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["apps/cloud-e2e/src/**/*.ts", "apps/cloud-e2e/src/**/*.js"]
+      }
+    }
+  },
+  "tags": []
+}

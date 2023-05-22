@@ -1,0 +1,99 @@
+{
+  "root": "apps/cloud",
+  "sourceRoot": "apps/cloud/src",
+  "projectType": "application",
+  "generators": {},
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:build",
+      "options": {
+        "assets": ["apps/cloud/src/favicon.ico", "apps/cloud/src/assets"],
+        "buildLibsFromSource": true,
+        "index": "apps/cloud/src/index.html",
+        "main": "apps/cloud/src/main.tsx",
+        "outputPath": "dist/apps/cloud",
+        "polyfills": "apps/cloud/src/polyfills.ts",
+        "scripts": [],
+        "styles": ["apps/cloud/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/styles/src/lib"]
+        },
+        "tsConfig": "apps/cloud/tsconfig.app.json",
+        "webpackConfig": "./apps/cloud/webpack.config.js"
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "10mb",
+              "maximumError": "10mb"
+            }
+          ],
+          "commonChunk": true,
+          "extractCss": true,
+          "extractLicenses": false,
+          "fileReplacements": [
+            {
+              "replace": "apps/cloud/src/environments/environment.ts",
+              "with": "apps/cloud/src/environments/environment.prod.ts"
+            },
+            {
+              "replace": "libs/environment/src/environments/environment.ts",
+              "with": "libs/environment/src/environments/environment.prod.ts"
+            }
+          ],
+          "namedChunks": true,
+          "optimization": true,
+          "outputHashing": "all",
+          "progress": false,
+          "sourceMap": false,
+          "statsJson": false,
+          "vendorChunk": true,
+          "version": true,
+          "webpackConfig": "apps/cloud/webpack.prod.config.js"
+        }
+      },
+      "outputs": ["{options.outputPath}"]
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "cloud:build",
+        "proxyConfig": "apps/cloud/proxy.conf.json",
+        "maxWorkers": 4,
+        "memoryLimit": 1024
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "cloud:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/cloud/**/*.js",
+          "apps/cloud/**/*.jsx",
+          "apps/cloud/**/*.ts",
+          "apps/cloud/**/*.tsx",
+          "apps/cloud/**/*.spec.ts",
+          "apps/cloud/**/*.spec.tsx",
+          "apps/cloud/**/*.spec.js",
+          "apps/cloud/**/*.spec.jsx",
+          "apps/cloud/**/*.d.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "apps/cloud/jest.config.js",
+        "passWithNoTests": true
+      },
+      "outputs": ["coverage/apps/cloud"]
+    }
+  },
+  "tags": []
+}

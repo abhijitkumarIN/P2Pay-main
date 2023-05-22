@@ -1,0 +1,31 @@
+{
+  "root": "libs/react/hooks",
+  "sourceRoot": "libs/react/hooks/src",
+  "projectType": "library",
+  "generators": {},
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/react/hooks/**/*.ts",
+          "libs/react/hooks/**/*.tsx",
+          "libs/react/hooks/**/*.spec.ts",
+          "libs/react/hooks/**/*.spec.tsx",
+          "libs/react/hooks/**/*.spec.js",
+          "libs/react/hooks/**/*.spec.jsx",
+          "libs/react/hooks/**/*.d.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "libs/react/hooks/jest.config.js",
+        "passWithNoTests": true
+      },
+      "outputs": ["coverage/libs/react/hooks"]
+    }
+  },
+  "tags": []
+}

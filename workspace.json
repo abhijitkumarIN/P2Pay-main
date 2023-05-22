@@ -1,0 +1,83 @@
+{
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "auth": "libs/auth",
+    "backend-utils": "libs/backend/utils",
+    "cloud": "apps/cloud",
+    "cloud-e2e": "apps/cloud-e2e",
+    "common-utils": "libs/common/utils",
+    "elements": "libs/elements",
+    "end-product-frontend-things": "libs/end-product/frontend/things",
+    "environment": "libs/environment",
+    "frontend-utils": "libs/frontend/utils",
+    "i18n": "libs/i18n",
+    "infusion": "libs/infusion",
+    "investigations": "libs/investigations",
+    "react-atomic-elements": "libs/react/atomic-elements",
+    "react-components": "libs/react/components",
+    "react-hooks": "libs/react/hooks",
+    "react-state-management": "libs/react/state-management",
+    "render-utils": "libs/render-utils",
+    "styles": "libs/styles",
+    "testing-front-end": "libs/testing/front-end",
+    "things": "libs/things",
+    "types": "libs/types",
+    "widgets": "libs/widgets"
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/react"
+  },
+  "defaultProject": "cloud",
+  "generators": {
+    "@nrwl/workspace": {
+      "library": {
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/cypress": {
+      "cypress-project": {
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/react": {
+      "application": {
+        "style": "scss",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "scss"
+      },
+      "library": {
+        "style": "scss",
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/next": {
+      "application": {
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/web": {
+      "application": {
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/node": {
+      "application": {
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/nest": {
+      "application": {
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/express": {
+      "application": {
+        "linter": "eslint"
+      }
+    }
+  }
+}

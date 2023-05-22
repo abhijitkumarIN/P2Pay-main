@@ -1,0 +1,17 @@
+export const filterSectionFilters = [
+  { name: 'PrimaryCareId', statisticalType: 'Data - Categorical - free form' },
+  { name: 'HcapScore', statisticalType: 'Data - Numeric - NTG - Severity Ranking' },
+  { name: 'PcpMember', statisticalType: 'Data - Categorical - free form' },
+  { name: 'P2P', statisticalType: 'Data - Categorical' },
+  { name: 'CommercialInsurance', statisticalType: 'Data - Categorical' },
+  { name: 'BasicFee', statisticalType: 'Data - Numeric - NTG - Discrete' },
+  { name: 'SpecialistFee', statisticalType: 'Data - Numeric - NTG - Discrete' },
+  { name: 'OfficeHours', statisticalType: 'Data - Categorical' },
+  { name: 'Npi', statisticalType: 'Data - Numeric - NTG - Discrete' },
+  { name: 'PcpSuite', statisticalType: 'Data - Categorical' },
+  { name: 'PcpStreetAddress', statisticalType: 'Data - Categorical - free form' },
+  { name: 'PcpzipCode', statisticalType: 'Data - Categorical - unordered - geo' },
+  { name: 'Telephone', statisticalType: 'Data - Categorical - unordered' },
+  { name: 'Title', statisticalType: 'Data - Categorical' },
+  { name: 'PrimaryCareName', statisticalType: 'Data - Categorical - free form' },
+];

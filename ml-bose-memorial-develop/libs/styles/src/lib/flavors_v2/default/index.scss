@@ -1,0 +1,11 @@
+/**
+* The default variables shared among the themes.
+* To extend these variables an override should be added in the desired theme.
+**/
+.default-theme {
+  // Login component.
+  --login-color: var(--on-surface-color);
+  --login-bg-color: var(--surface-color);
+  --login-link-color: var(--primary-color);
+  --login-link-hover-color: var(--secondary-color);
+}

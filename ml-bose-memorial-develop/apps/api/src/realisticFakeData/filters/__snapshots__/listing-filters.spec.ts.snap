@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`realisticFakeData listing filters using operation combination should filter on an attribute with single values using a combination of operations 1`] = `
+Array [
+  Object {
+    "barista": Object {
+      "displayMedia": "",
+      "id": "682e239d-e3f5-4da8-a524-d679dd1f5ad3",
+    },
+    "coffee": Object {
+      "displayMedia": "",
+      "id": "1858053e-a2bf-47c7-8403-0e68df57065f",
+    },
+    "coffeeQuality": Object {
+      "displayMedia": Object {
+        "type": "svg",
+        "value": "https://raw.githubusercontent.com/KLEEEN-SOFTWARE/Kleeen-svgs/main/assets/severity-levels-svgs/severity-level-1of4.svg",
+      },
+      "displayValue": "Gross",
+      "id": "fa53894b-3420-471d-a961-66d9f647033d",
+    },
+    "coffeeShop": Object {
+      "displayMedia": Object {
+        "type": "text",
+        "value": "Machiatto",
+      },
+      "displayValue": "Machiatto",
+      "id": "e1c266f8-b31d-47b9-8b22-4cce57ecae1d",
+    },
+    "customer": Object {
+      "displayMedia": "",
+      "id": "ebaab08d-6b34-47b6-ac2e-d3f78aca8130",
+    },
+    "description": Object {
+      "displayMedia": "",
+      "displayValue": "Laboriosam eligendi aliquam dicta rerum. Quia voluptatem est dolores voluptatem provident iusto id.",
+      "id": "e39f8999-5f8e-4fd7-bdd1-7b9ec7b13d70",
+    },
+    "displayValue::coffeeShop": Object {
+      "displayValue": "Machiatto",
+      "id": "e1c266f8-b31d-47b9-8b22-4cce57ecae1d",
+    },
+    "efficiencyPercent": Object {
+      "displayMedia": "",
+      "id": "792aeedf-63ac-4a3d-8537-9d5627fe21f2",
+    },
+    "id": "e1c266f8-b31d-47b9-8b22-4cce57ecae1d",
+    "importantEvent": Object {
+      "displayMedia": "",
+      "id": "d8861460-1ac5-4cd6-b8ac-96aedb003fae",
+    },
+    "inauguration": Object {
+      "displayMedia": "",
+      "displayValue": 1629062535111,
+      "id": "bb75364c-115f-4e40-b477-782241eb540b",
+    },
+    "isOpen": Object {
+      "displayMedia": "",
+      "displayValue": false,
+      "id": "edf129ec-c3eb-4887-9daf-8837ead1d027",
+    },
+    "managerReview": Object {
+      "displayMedia": "",
+      "displayValue": 19,
+      "id": "2ed6e6e1-090c-4080-b038-6a260be4f3ca",
+    },
+    "marketValue": Object {
+      "displayMedia": "",
+      "displayValue": 5,
+      "id": "09abe778-7045-41c8-9d1b-c1f80e5748d1",
+    },
+    "menu": Object {
+      "displayMedia": "",
+      "displayValue": 940,
+      "id": "835a9201-a5e4-42d3-a933-2d640c85cdff",
+    },
+    "monthlyBrandingColor": Object {
+      "displayMedia": "",
+      "displayValue": "rgba(190,134,190,0.72)",
+      "id": "ca45667b-c1b0-4611-bb5e-dfb124a8a261",
+    },
+    "occupationPercent": Object {
+      "displayMedia": "",
+      "displayValue": 31,
+      "id": "6b1d1c3d-51df-4a3a-969a-06f03a9556c8",
+    },
+    "previousBrandingColors": Array [
+      Object {
+        "displayValue": "rgba(151,248,39,0.33)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(128,103,200,0.11)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(188,39,217,0.9)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(100,239,157,0.71)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(36,223,195,0.96)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(199,253,4,0.06)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(86,56,24,0.4)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(112,109,140,0.25)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(117,54,71,0.66)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(95,104,198,0.77)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(16,124,185,0.73)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(76,32,225,0.53)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(33,193,153,0.03)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(102,130,190,0.29)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(135,113,55,0.94)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(242,138,180,0.84)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(3,232,77,0.47)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(239,126,184,0.22)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(75,179,35,0.57)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+      Object {
+        "displayValue": "rgba(210,169,26,0.33)",
+        "id": "c07bcdb9-bedc-4dbc-9c89-58e3b1254e16",
+      },
+    ],
+    "reviewLevel": Object {
+      "displayMedia": "",
+      "id": "d8476712-60bb-409e-a06d-b40c27d53d17",
+    },
+    "reviewScore": Object {
+      "displayMedia": "",
+      "id": "075aea9a-b7a2-4cea-a72f-87ad6f212bfd",
+    },
+    "server": Array [
+      Object {
+        "displayValue": "Angelica",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Gilberto",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Gabe",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Jaqueline",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Zula",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Christian",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Theodore",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Dorcas",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Terrill",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Emerald",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Lenore",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Garfield",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Emma",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Ryleigh",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Tristian",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Marilyne",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Trent",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Hildegard",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Gracie",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+      Object {
+        "displayValue": "Kaylee",
+        "id": "cde61813-7185-47e3-86dd-7ef7cc5c6728",
+      },
+    ],
+    "squareFootage": Object {
+      "displayValue": 1333.65946309641,
+      "id": "f202e121-a44b-4bf3-9643-3cf536a3c579",
+    },
+    "table": Object {
+      "displayValue": 40,
+    },
+    "timestamp": Object {
+      "displayValue": 1623247503734,
+      "id": "33a31b40-1233-448f-972e-883a54649e32",
+    },
+    "userReview": Object {
+      "displayMedia": "",
+      "id": "3ee47dd1-ac1a-4321-ab0c-a458385897ed",
+    },
+    "userWrittenReviews": Object {
+      "displayMedia": "",
+      "id": "7aa8a922-dc06-4321-ae0b-16f431fca187",
+    },
+    "yearlyIncome": Object {
+      "displayValue": 76,
+    },
+  },
+]
+`;

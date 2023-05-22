@@ -1,0 +1,8 @@
+{
+  "root": "libs/styles",
+  "sourceRoot": "libs/styles/src",
+  "projectType": "library",
+  "generators": {},
+  "targets": {},
+  "tags": []
+}

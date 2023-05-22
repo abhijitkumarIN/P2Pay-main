@@ -1,0 +1,3888 @@
+[
+  {
+    "name": "PcpMail",
+    "description": "",
+    "formatType": "email",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "email",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "email"
+      },
+      "eligiblePcp": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "eligiblePcp",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "EligiblePcp"
+      }
+    }
+  },
+  {
+    "name": "PrimaryCareLastName",
+    "description": "",
+    "formatType": "last_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "last_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "last_name"
+      },
+      "eligiblePcp": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "eligiblePcp",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "EligiblePcp"
+      }
+    }
+  },
+  {
+    "name": "Timestamp",
+    "formatType": "timestamp",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "format": {},
+        "formatType": "timestamp",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "timestamp"
+      }
+    }
+  },
+  {
+    "name": "MemberName",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "eligiblePcp": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "eligiblePcp",
+        "params": ["EligiblePcp", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "patientsPcp": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "patientsPcp",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PatientsPcp"
+      },
+      "membersTransactions": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "membersTransactions",
+        "params": ["MembersTransactions", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "membersPcp": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "membersPcp",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MembersPcp"
+      },
+      "registrationDate": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "registrationDate",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "RegistrationDate"
+      },
+      "balanceDue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "balanceDue",
+        "params": ["BalanceDue", 20, [1, 100]],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "arrayOf"
+      },
+      "dob": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "dob",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Dob"
+      },
+      "zipCode": {
+        "description": "",
+        "format": {},
+        "formatType": "zip",
+        "name": "zipCode",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered - geo",
+        "type": "ZipCode"
+      },
+      "address": {
+        "description": "",
+        "format": {},
+        "formatType": "address1",
+        "name": "address",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Address"
+      },
+      "memberId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "memberId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MemberId"
+      },
+      "aptNo": {
+        "description": "",
+        "format": {
+          "max": 15,
+          "min": 1
+        },
+        "formatType": "integer",
+        "name": "aptNo",
+        "params": [1, 15],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "AptNo"
+      },
+      "cellPhone": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "cellPhone",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "CellPhone"
+      },
+      "gender": {
+        "description": "",
+        "format": {
+          "examples": ["Male", "Female", "Decline", "Other"]
+        },
+        "formatType": "prime",
+        "name": "gender",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Gender"
+      },
+      "businessPhone": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "businessPhone",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "BusinessPhone"
+      }
+    }
+  },
+  {
+    "name": "BusinessPhone",
+    "description": "",
+    "formatType": "phone",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "phone"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MemberName"
+      }
+    }
+  },
+  {
+    "name": "Gender",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 4,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": ["Male", "Female", "Decline", "Other"]
+        },
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [["Male", "Female", "Decline", "Other"]],
+        "statisticalType": "Data - Categorical",
+        "type": "oneOfEach"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": ["MemberName", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "PrimaryCareId",
+    "description": "",
+    "formatType": "uuid",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "uuid"
+      },
+      "hcapScore": {
+        "description": "",
+        "format": {
+          "max": 10,
+          "min": 1,
+          "severityBad": 1,
+          "severityGood": 10,
+          "severityLevels": 5
+        },
+        "formatType": "severity_score",
+        "name": "hcapScore",
+        "params": ["HcapScore", 20, [1, 10]],
+        "statisticalType": "Data - Numeric - NTG - Severity Ranking",
+        "type": "arrayOf"
+      },
+      "pcpMember": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "pcpMember",
+        "params": ["PcpMember", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "p2P": {
+        "description": "",
+        "format": {},
+        "formatType": "prime",
+        "name": "p2P",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "P2P"
+      },
+      "commercialInsurance": {
+        "description": "",
+        "format": {},
+        "formatType": "prime",
+        "name": "commercialInsurance",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "CommercialInsurance"
+      },
+      "basicFee": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "basicFee",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "BasicFee"
+      },
+      "medicare": {
+        "description": "",
+        "format": {},
+        "formatType": "boolean",
+        "name": "medicare",
+        "params": [],
+        "statisticalType": "Data - Categorical - Binary",
+        "type": "Medicare"
+      },
+      "specialistFee": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "specialistFee",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "SpecialistFee"
+      },
+      "officeHours": {
+        "description": "",
+        "format": {},
+        "formatType": "prime",
+        "name": "officeHours",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "OfficeHours"
+      },
+      "npi": {
+        "description": "",
+        "format": {},
+        "formatType": "integer",
+        "name": "npi",
+        "params": [],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "Npi"
+      },
+      "pcpSuite": {
+        "description": "",
+        "format": {
+          "examples": [
+            "1a",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "3a",
+            "101",
+            "202",
+            "1000",
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "300",
+            "44",
+            "q"
+          ]
+        },
+        "formatType": "prime",
+        "name": "pcpSuite",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "PcpSuite"
+      },
+      "pcpStreetAddress": {
+        "description": "",
+        "format": {},
+        "formatType": "address1",
+        "name": "pcpStreetAddress",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PcpStreetAddress"
+      },
+      "pcpZipCode": {
+        "description": "",
+        "format": {},
+        "formatType": "zip",
+        "name": "pcpZipCode",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered - geo",
+        "type": "PcpZipCode"
+      },
+      "telephone": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "telephone",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "Telephone"
+      },
+      "title": {
+        "description": "",
+        "format": {
+          "examples": [
+            "D.D.S.",
+            "D.M.D.",
+            "D.O. ",
+            "D.P.M.",
+            "F.A.A.D.",
+            "F.A.A.E.M.",
+            "F.A.A.F.P.",
+            "F.A.C.C.",
+            "F.A.C.E.",
+            "F.A.C.E.P. ",
+            "M.D.",
+            "M.P.H.",
+            "N.P. "
+          ]
+        },
+        "formatType": "prime",
+        "name": "title",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Title"
+      },
+      "primaryCareName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "primaryCareName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareName"
+      }
+    }
+  },
+  {
+    "name": "CellPhone",
+    "description": "",
+    "formatType": "phone",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "phone"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MemberName"
+      }
+    }
+  },
+  {
+    "name": "AptNo",
+    "description": "",
+    "formatType": "integer",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 15,
+          "min": 1
+        },
+        "formatType": "integer",
+        "name": "displayValue",
+        "params": [1, 15],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MemberName"
+      }
+    }
+  },
+  {
+    "name": "MemberId",
+    "description": "",
+    "formatType": "uuid",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "uuid"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MemberName"
+      }
+    }
+  },
+  {
+    "name": "Address",
+    "description": "",
+    "formatType": "address1",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "address1",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "address1"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MemberName"
+      }
+    }
+  },
+  {
+    "name": "ZipCode",
+    "description": "",
+    "formatType": "zip",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "zip",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered - geo",
+        "type": "zip"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": ["MemberName", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "Dob",
+    "description": "",
+    "formatType": "date",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "date"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MemberName"
+      }
+    }
+  },
+  {
+    "name": "BalanceDue",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MemberName"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      }
+    }
+  },
+  {
+    "name": "PrimaryCareName",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareId"
+      }
+    }
+  },
+  {
+    "name": "Title",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 13,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "D.D.S.",
+            "D.M.D.",
+            "D.O. ",
+            "D.P.M.",
+            "F.A.A.D.",
+            "F.A.A.E.M.",
+            "F.A.A.F.P.",
+            "F.A.C.C.",
+            "F.A.C.E.",
+            "F.A.C.E.P. ",
+            "M.D.",
+            "M.P.H.",
+            "N.P. "
+          ]
+        },
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [
+          [
+            "D.D.S.",
+            "D.M.D.",
+            "D.O. ",
+            "D.P.M.",
+            "F.A.A.D.",
+            "F.A.A.E.M.",
+            "F.A.A.F.P.",
+            "F.A.C.C.",
+            "F.A.C.E.",
+            "F.A.C.E.P. ",
+            "M.D.",
+            "M.P.H.",
+            "N.P. "
+          ]
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "oneOfEach"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": ["PrimaryCareId", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "Telephone",
+    "description": "",
+    "formatType": "phone",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "phone"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareId"
+      }
+    }
+  },
+  {
+    "name": "PcpzipCode",
+    "description": "",
+    "formatType": "zip",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "zip",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered - geo",
+        "type": "zip"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": ["PrimaryCareId", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": ["MemberName", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "PcpStreetAddress",
+    "description": "",
+    "formatType": "address1",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "address1",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "address1"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareId"
+      }
+    }
+  },
+  {
+    "name": "PcpSuite",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 20,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "1a",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "3a",
+            "101",
+            "202",
+            "1000",
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "300",
+            "44",
+            "q"
+          ]
+        },
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [
+          [
+            "1a",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "3a",
+            "101",
+            "202",
+            "1000",
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "300",
+            "44",
+            "q"
+          ]
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "oneOfEach"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareId"
+      }
+    }
+  },
+  {
+    "name": "Npi",
+    "description": "",
+    "formatType": "integer",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "integer",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareId"
+      }
+    }
+  },
+  {
+    "name": "OfficeHours",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "string"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareId"
+      }
+    }
+  },
+  {
+    "name": "BasicFee",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareId"
+      }
+    }
+  },
+  {
+    "name": "SpecialistFee",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareId"
+      }
+    }
+  },
+  {
+    "name": "Medicare",
+    "description": "",
+    "formatType": "boolean",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "boolean",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - Binary",
+        "type": "boolean"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": ["PrimaryCareId", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "CommercialInsurance",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "string"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": ["PrimaryCareId", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "P2P",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "string"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareId"
+      }
+    }
+  },
+  {
+    "name": "RegistrationDate",
+    "description": "",
+    "formatType": "date",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "date"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": ["MemberName", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "DonorId",
+    "description": "",
+    "formatType": "uuid",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "uuid"
+      },
+      "donorCommitment": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "donorCommitment",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "DonorCommitment"
+      },
+      "donorFax": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "donorFax",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "DonorFax"
+      },
+      "donorSpentYtd": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "donorSpentYtd",
+        "params": ["DonorSpentYtd", 20, [1, 100]],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "arrayOf"
+      },
+      "donorZip": {
+        "description": "",
+        "format": {},
+        "formatType": "zip",
+        "name": "donorZip",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered - geo",
+        "type": "DonorZip"
+      },
+      "donorCurrentBalance": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "donorCurrentBalance",
+        "params": ["DonorCurrentBalance", 20, [1, 100]],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "arrayOf"
+      },
+      "minPerTransaction": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "minPerTransaction",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "MinPerTransaction"
+      },
+      "donorSuite": {
+        "description": "",
+        "format": {},
+        "formatType": "integer",
+        "name": "donorSuite",
+        "params": [],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "DonorSuite"
+      },
+      "donorStreetAddress": {
+        "description": "",
+        "format": {},
+        "formatType": "address1",
+        "name": "donorStreetAddress",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorStreetAddress"
+      },
+      "donorBusiness": {
+        "description": "",
+        "format": {
+          "examples": ["Yes", "No"]
+        },
+        "formatType": "boolean",
+        "name": "donorBusiness",
+        "params": [],
+        "statisticalType": "Data - Categorical - Binary",
+        "type": "DonorBusiness"
+      },
+      "paidMembers": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "paidMembers",
+        "params": ["PaidMembers", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "donorName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "donorName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorName"
+      },
+      "maxPerTransaction": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "maxPerTransaction",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "MaxPerTransaction"
+      },
+      "donorPhoneNumber": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "donorPhoneNumber",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "DonorPhoneNumber"
+      },
+      "businessName": {
+        "description": "",
+        "format": {},
+        "formatType": "company_name",
+        "name": "businessName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "BusinessName"
+      },
+      "preferredMember": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "preferredMember",
+        "params": ["PreferredMember", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "PreferredMember",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorId"
+      },
+      "eligiblePcp": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "eligiblePcp",
+        "params": ["EligiblePcp", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "patientsPcp": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "patientsPcp",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PatientsPcp"
+      },
+      "membersTransactions": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "membersTransactions",
+        "params": ["MembersTransactions", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "membersPcp": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "membersPcp",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MembersPcp"
+      },
+      "registrationDate": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "registrationDate",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "RegistrationDate"
+      },
+      "balanceDue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "balanceDue",
+        "params": ["BalanceDue", 20, [1, 100]],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "arrayOf"
+      },
+      "dob": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "dob",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Dob"
+      },
+      "zipCode": {
+        "description": "",
+        "format": {},
+        "formatType": "zip",
+        "name": "zipCode",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered - geo",
+        "type": "ZipCode"
+      },
+      "address": {
+        "description": "",
+        "format": {},
+        "formatType": "address1",
+        "name": "address",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Address"
+      },
+      "memberId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "memberId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MemberId"
+      },
+      "aptNo": {
+        "description": "",
+        "format": {
+          "max": 15,
+          "min": 1
+        },
+        "formatType": "integer",
+        "name": "aptNo",
+        "params": [1, 15],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "AptNo"
+      },
+      "cellPhone": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "cellPhone",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "CellPhone"
+      },
+      "gender": {
+        "description": "",
+        "format": {
+          "examples": ["Male", "Female", "Decline", "Other"]
+        },
+        "formatType": "prime",
+        "name": "gender",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Gender"
+      },
+      "businessPhone": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "businessPhone",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "BusinessPhone"
+      }
+    }
+  },
+  {
+    "name": "BusinessName",
+    "description": "",
+    "formatType": "company_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "company_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "company_name"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorId"
+      }
+    }
+  },
+  {
+    "name": "DonorPhoneNumber",
+    "description": "",
+    "formatType": "phone",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "phone"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorId"
+      }
+    }
+  },
+  {
+    "name": "MaxPerTransaction",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorId"
+      }
+    }
+  },
+  {
+    "name": "DonorName",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorId"
+      }
+    }
+  },
+  {
+    "name": "PaidMembers",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorId"
+      },
+      "eligiblePcp": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "eligiblePcp",
+        "params": ["EligiblePcp", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "patientsPcp": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "patientsPcp",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PatientsPcp"
+      },
+      "membersTransactions": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "membersTransactions",
+        "params": ["MembersTransactions", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "membersPcp": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "membersPcp",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MembersPcp"
+      },
+      "registrationDate": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "registrationDate",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "RegistrationDate"
+      },
+      "balanceDue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "balanceDue",
+        "params": ["BalanceDue", 20, [1, 100]],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "arrayOf"
+      },
+      "dob": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "dob",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Dob"
+      },
+      "zipCode": {
+        "description": "",
+        "format": {},
+        "formatType": "zip",
+        "name": "zipCode",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered - geo",
+        "type": "ZipCode"
+      },
+      "address": {
+        "description": "",
+        "format": {},
+        "formatType": "address1",
+        "name": "address",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Address"
+      },
+      "memberId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "memberId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MemberId"
+      },
+      "aptNo": {
+        "description": "",
+        "format": {
+          "max": 15,
+          "min": 1
+        },
+        "formatType": "integer",
+        "name": "aptNo",
+        "params": [1, 15],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "AptNo"
+      },
+      "cellPhone": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "cellPhone",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "CellPhone"
+      },
+      "gender": {
+        "description": "",
+        "format": {
+          "examples": ["Male", "Female", "Decline", "Other"]
+        },
+        "formatType": "prime",
+        "name": "gender",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Gender"
+      },
+      "businessPhone": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "businessPhone",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "BusinessPhone"
+      }
+    }
+  },
+  {
+    "name": "DonorBusiness",
+    "description": "",
+    "formatType": "boolean",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": ["Yes", "No"]
+        },
+        "formatType": "boolean",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - Binary",
+        "type": "boolean"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": ["DonorId", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "DonorStreetAddress",
+    "description": "",
+    "formatType": "address1",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "address1",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "address1"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorId"
+      }
+    }
+  },
+  {
+    "name": "DonorSuite",
+    "description": "",
+    "formatType": "integer",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "integer",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorId"
+      }
+    }
+  },
+  {
+    "name": "MinPerTransaction",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorId"
+      }
+    }
+  },
+  {
+    "name": "DonorCurrentBalance",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorId"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      }
+    }
+  },
+  {
+    "name": "DonorZip",
+    "description": "",
+    "formatType": "zip",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "zip",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered - geo",
+        "type": "zip"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorId"
+      }
+    }
+  },
+  {
+    "name": "DonorFax",
+    "description": "",
+    "formatType": "phone",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "phone"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorId"
+      }
+    }
+  },
+  {
+    "name": "DonorSpentYtd",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorId"
+      }
+    }
+  },
+  {
+    "name": "DonorCommitment",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "donorId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "donorId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorId"
+      }
+    }
+  },
+  {
+    "name": "TransactionId",
+    "description": "",
+    "formatType": "uuid",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "uuid"
+      },
+      "invoiceNumber": {
+        "description": "",
+        "format": {},
+        "formatType": "integer",
+        "name": "invoiceNumber",
+        "params": [],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "InvoiceNumber"
+      },
+      "totalDonorPayments": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "totalDonorPayments",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "TotalDonorPayments"
+      },
+      "invoiceAmount": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "invoiceAmount",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "InvoiceAmount"
+      },
+      "memberPaidAmount": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "memberPaidAmount",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "MemberPaidAmount"
+      },
+      "transactionDonationAmount": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "transactionDonationAmount",
+        "params": ["TransactionDonationAmount", 20, [1, 100]],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "arrayOf"
+      },
+      "transactionPcp": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "transactionPcp",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "TransactionPcp"
+      },
+      "transactionAmount": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "transactionAmount",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "TransactionAmount"
+      },
+      "transactionDate": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "transactionDate",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "TransactionDate"
+      },
+      "invoiceId": {
+        "description": "",
+        "format": {},
+        "formatType": "integer",
+        "name": "invoiceId",
+        "params": [],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "InvoiceId"
+      },
+      "transactionDonor": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionDonor",
+        "params": ["TransactionDonor", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "transactionMember": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "transactionMember",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "TransactionMember"
+      },
+      "memberAmountPaid": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "memberAmountPaid",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "MemberAmountPaid"
+      }
+    }
+  },
+  {
+    "name": "MemberAmountPaid",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "transactionId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "TransactionId"
+      }
+    }
+  },
+  {
+    "name": "TransactionMember",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "transactionId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionId",
+        "params": ["TransactionId", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "eligiblePcp": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "eligiblePcp",
+        "params": ["EligiblePcp", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "patientsPcp": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "patientsPcp",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PatientsPcp"
+      },
+      "membersTransactions": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "membersTransactions",
+        "params": ["MembersTransactions", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "membersPcp": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "membersPcp",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MembersPcp"
+      },
+      "registrationDate": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "registrationDate",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "RegistrationDate"
+      },
+      "balanceDue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "balanceDue",
+        "params": ["BalanceDue", 20, [1, 100]],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "arrayOf"
+      },
+      "dob": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "dob",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Dob"
+      },
+      "zipCode": {
+        "description": "",
+        "format": {},
+        "formatType": "zip",
+        "name": "zipCode",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered - geo",
+        "type": "ZipCode"
+      },
+      "address": {
+        "description": "",
+        "format": {},
+        "formatType": "address1",
+        "name": "address",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Address"
+      },
+      "memberId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "memberId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MemberId"
+      },
+      "aptNo": {
+        "description": "",
+        "format": {
+          "max": 15,
+          "min": 1
+        },
+        "formatType": "integer",
+        "name": "aptNo",
+        "params": [1, 15],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "AptNo"
+      },
+      "cellPhone": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "cellPhone",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "CellPhone"
+      },
+      "gender": {
+        "description": "",
+        "format": {
+          "examples": ["Male", "Female", "Decline", "Other"]
+        },
+        "formatType": "prime",
+        "name": "gender",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Gender"
+      },
+      "businessPhone": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "businessPhone",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "BusinessPhone"
+      }
+    }
+  },
+  {
+    "name": "TransactionDonor",
+    "description": "",
+    "formatType": "uuid",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "uuid"
+      },
+      "transactionDonationAmount": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "transactionDonationAmount",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "TransactionDonationAmount"
+      },
+      "transactionId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "TransactionId"
+      },
+      "donorCommitment": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "donorCommitment",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "DonorCommitment"
+      },
+      "donorFax": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "donorFax",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "DonorFax"
+      },
+      "donorSpentYtd": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "donorSpentYtd",
+        "params": ["DonorSpentYtd", 20, [1, 100]],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "arrayOf"
+      },
+      "donorZip": {
+        "description": "",
+        "format": {},
+        "formatType": "zip",
+        "name": "donorZip",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered - geo",
+        "type": "DonorZip"
+      },
+      "donorCurrentBalance": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "donorCurrentBalance",
+        "params": ["DonorCurrentBalance", 20, [1, 100]],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "arrayOf"
+      },
+      "minPerTransaction": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "minPerTransaction",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "MinPerTransaction"
+      },
+      "donorSuite": {
+        "description": "",
+        "format": {},
+        "formatType": "integer",
+        "name": "donorSuite",
+        "params": [],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "DonorSuite"
+      },
+      "donorStreetAddress": {
+        "description": "",
+        "format": {},
+        "formatType": "address1",
+        "name": "donorStreetAddress",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorStreetAddress"
+      },
+      "donorBusiness": {
+        "description": "",
+        "format": {
+          "examples": ["Yes", "No"]
+        },
+        "formatType": "boolean",
+        "name": "donorBusiness",
+        "params": [],
+        "statisticalType": "Data - Categorical - Binary",
+        "type": "DonorBusiness"
+      },
+      "paidMembers": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "paidMembers",
+        "params": ["PaidMembers", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "donorName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "donorName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DonorName"
+      },
+      "maxPerTransaction": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "maxPerTransaction",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "MaxPerTransaction"
+      },
+      "donorPhoneNumber": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "donorPhoneNumber",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "DonorPhoneNumber"
+      },
+      "businessName": {
+        "description": "",
+        "format": {},
+        "formatType": "company_name",
+        "name": "businessName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "BusinessName"
+      },
+      "preferredMember": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "preferredMember",
+        "params": ["PreferredMember", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "InvoiceId",
+    "description": "",
+    "formatType": "integer",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "integer",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "transactionId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "TransactionId"
+      }
+    }
+  },
+  {
+    "name": "TransactionDate",
+    "description": "",
+    "formatType": "date",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "date"
+      },
+      "transactionId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionId",
+        "params": ["TransactionId", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "TransactionAmount",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "transactionId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "TransactionId"
+      }
+    }
+  },
+  {
+    "name": "TransactionPcp",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "transactionId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionId",
+        "params": ["TransactionId", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareId"
+      }
+    }
+  },
+  {
+    "name": "TransactionDonationAmount",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "transactionId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "TransactionId"
+      },
+      "transactionDonor": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionDonor",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "TransactionDonor"
+      }
+    }
+  },
+  {
+    "name": "MemberPaidAmount",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "transactionId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "TransactionId"
+      }
+    }
+  },
+  {
+    "name": "InvoiceAmount",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "transactionId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "TransactionId"
+      }
+    }
+  },
+  {
+    "name": "TotalDonorPayments",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "transactionId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "TransactionId"
+      }
+    }
+  },
+  {
+    "name": "InvoiceNumber",
+    "description": "",
+    "formatType": "integer",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "integer",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "transactionId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "TransactionId"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      }
+    }
+  },
+  {
+    "name": "MembersPcp",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": ["MemberName", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareId"
+      }
+    }
+  },
+  {
+    "name": "MembersTransactions",
+    "description": "",
+    "formatType": "uuid",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "uuid"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MemberName"
+      },
+      "invoiceNumber": {
+        "description": "",
+        "format": {},
+        "formatType": "integer",
+        "name": "invoiceNumber",
+        "params": [],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "InvoiceNumber"
+      },
+      "totalDonorPayments": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "totalDonorPayments",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "TotalDonorPayments"
+      },
+      "invoiceAmount": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "invoiceAmount",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "InvoiceAmount"
+      },
+      "memberPaidAmount": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "memberPaidAmount",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "MemberPaidAmount"
+      },
+      "transactionDonationAmount": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "transactionDonationAmount",
+        "params": ["TransactionDonationAmount", 20, [1, 100]],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "arrayOf"
+      },
+      "transactionPcp": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "transactionPcp",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "TransactionPcp"
+      },
+      "transactionAmount": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "transactionAmount",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "TransactionAmount"
+      },
+      "transactionDate": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "transactionDate",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "TransactionDate"
+      },
+      "invoiceId": {
+        "description": "",
+        "format": {},
+        "formatType": "integer",
+        "name": "invoiceId",
+        "params": [],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "InvoiceId"
+      },
+      "transactionDonor": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "transactionDonor",
+        "params": ["TransactionDonor", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "transactionMember": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "transactionMember",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "TransactionMember"
+      },
+      "memberAmountPaid": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "memberAmountPaid",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "MemberAmountPaid"
+      }
+    }
+  },
+  {
+    "name": "PatientsPcp",
+    "description": "",
+    "formatType": "uuid",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "uuid"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": ["MemberName", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "hcapScore": {
+        "description": "",
+        "format": {
+          "max": 10,
+          "min": 1,
+          "severityBad": 1,
+          "severityGood": 10,
+          "severityLevels": 5
+        },
+        "formatType": "severity_score",
+        "name": "hcapScore",
+        "params": ["HcapScore", 20, [1, 10]],
+        "statisticalType": "Data - Numeric - NTG - Severity Ranking",
+        "type": "arrayOf"
+      },
+      "pcpMember": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "pcpMember",
+        "params": ["PcpMember", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "p2P": {
+        "description": "",
+        "format": {},
+        "formatType": "prime",
+        "name": "p2P",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "P2P"
+      },
+      "commercialInsurance": {
+        "description": "",
+        "format": {},
+        "formatType": "prime",
+        "name": "commercialInsurance",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "CommercialInsurance"
+      },
+      "basicFee": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "basicFee",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "BasicFee"
+      },
+      "medicare": {
+        "description": "",
+        "format": {},
+        "formatType": "boolean",
+        "name": "medicare",
+        "params": [],
+        "statisticalType": "Data - Categorical - Binary",
+        "type": "Medicare"
+      },
+      "specialistFee": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "specialistFee",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "SpecialistFee"
+      },
+      "officeHours": {
+        "description": "",
+        "format": {},
+        "formatType": "prime",
+        "name": "officeHours",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "OfficeHours"
+      },
+      "npi": {
+        "description": "",
+        "format": {},
+        "formatType": "integer",
+        "name": "npi",
+        "params": [],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "Npi"
+      },
+      "pcpSuite": {
+        "description": "",
+        "format": {
+          "examples": [
+            "1a",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "3a",
+            "101",
+            "202",
+            "1000",
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "300",
+            "44",
+            "q"
+          ]
+        },
+        "formatType": "prime",
+        "name": "pcpSuite",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "PcpSuite"
+      },
+      "pcpStreetAddress": {
+        "description": "",
+        "format": {},
+        "formatType": "address1",
+        "name": "pcpStreetAddress",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PcpStreetAddress"
+      },
+      "pcpZipCode": {
+        "description": "",
+        "format": {},
+        "formatType": "zip",
+        "name": "pcpZipCode",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered - geo",
+        "type": "PcpZipCode"
+      },
+      "telephone": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "telephone",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "Telephone"
+      },
+      "title": {
+        "description": "",
+        "format": {
+          "examples": [
+            "D.D.S.",
+            "D.M.D.",
+            "D.O. ",
+            "D.P.M.",
+            "F.A.A.D.",
+            "F.A.A.E.M.",
+            "F.A.A.F.P.",
+            "F.A.C.C.",
+            "F.A.C.E.",
+            "F.A.C.E.P. ",
+            "M.D.",
+            "M.P.H.",
+            "N.P. "
+          ]
+        },
+        "formatType": "prime",
+        "name": "title",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Title"
+      },
+      "primaryCareName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "primaryCareName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareName"
+      }
+    }
+  },
+  {
+    "name": "PcpMember",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareId"
+      },
+      "eligiblePcp": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "eligiblePcp",
+        "params": ["EligiblePcp", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "patientsPcp": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "patientsPcp",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PatientsPcp"
+      },
+      "membersTransactions": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "membersTransactions",
+        "params": ["MembersTransactions", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "membersPcp": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "membersPcp",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MembersPcp"
+      },
+      "registrationDate": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "registrationDate",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "RegistrationDate"
+      },
+      "balanceDue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "balanceDue",
+        "params": ["BalanceDue", 20, [1, 100]],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "arrayOf"
+      },
+      "dob": {
+        "description": "",
+        "format": {},
+        "formatType": "date",
+        "name": "dob",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Dob"
+      },
+      "zipCode": {
+        "description": "",
+        "format": {},
+        "formatType": "zip",
+        "name": "zipCode",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered - geo",
+        "type": "ZipCode"
+      },
+      "address": {
+        "description": "",
+        "format": {},
+        "formatType": "address1",
+        "name": "address",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Address"
+      },
+      "memberId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "memberId",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "MemberId"
+      },
+      "aptNo": {
+        "description": "",
+        "format": {
+          "max": 15,
+          "min": 1
+        },
+        "formatType": "integer",
+        "name": "aptNo",
+        "params": [1, 15],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "AptNo"
+      },
+      "cellPhone": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "cellPhone",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "CellPhone"
+      },
+      "gender": {
+        "description": "",
+        "format": {
+          "examples": ["Male", "Female", "Decline", "Other"]
+        },
+        "formatType": "prime",
+        "name": "gender",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Gender"
+      },
+      "businessPhone": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "businessPhone",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "BusinessPhone"
+      }
+    }
+  },
+  {
+    "name": "EligiblePcp",
+    "description": "",
+    "formatType": "uuid",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "uuid"
+      },
+      "pcpMail": {
+        "description": "",
+        "format": {},
+        "formatType": "email",
+        "name": "pcpMail",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PcpMail"
+      },
+      "primaryCareLastName": {
+        "description": "",
+        "format": {},
+        "formatType": "last_name",
+        "name": "primaryCareLastName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareLastName"
+      },
+      "memberName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "memberName",
+        "params": ["MemberName", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "hcapScore": {
+        "description": "",
+        "format": {
+          "max": 10,
+          "min": 1,
+          "severityBad": 1,
+          "severityGood": 10,
+          "severityLevels": 5
+        },
+        "formatType": "severity_score",
+        "name": "hcapScore",
+        "params": ["HcapScore", 20, [1, 10]],
+        "statisticalType": "Data - Numeric - NTG - Severity Ranking",
+        "type": "arrayOf"
+      },
+      "pcpMember": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "pcpMember",
+        "params": ["PcpMember", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "p2P": {
+        "description": "",
+        "format": {},
+        "formatType": "prime",
+        "name": "p2P",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "P2P"
+      },
+      "commercialInsurance": {
+        "description": "",
+        "format": {},
+        "formatType": "prime",
+        "name": "commercialInsurance",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "CommercialInsurance"
+      },
+      "basicFee": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "basicFee",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "BasicFee"
+      },
+      "medicare": {
+        "description": "",
+        "format": {},
+        "formatType": "boolean",
+        "name": "medicare",
+        "params": [],
+        "statisticalType": "Data - Categorical - Binary",
+        "type": "Medicare"
+      },
+      "specialistFee": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "specialistFee",
+        "params": [1, 100],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "SpecialistFee"
+      },
+      "officeHours": {
+        "description": "",
+        "format": {},
+        "formatType": "prime",
+        "name": "officeHours",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "OfficeHours"
+      },
+      "npi": {
+        "description": "",
+        "format": {},
+        "formatType": "integer",
+        "name": "npi",
+        "params": [],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "Npi"
+      },
+      "pcpSuite": {
+        "description": "",
+        "format": {
+          "examples": [
+            "1a",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "3a",
+            "101",
+            "202",
+            "1000",
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "300",
+            "44",
+            "q"
+          ]
+        },
+        "formatType": "prime",
+        "name": "pcpSuite",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "PcpSuite"
+      },
+      "pcpStreetAddress": {
+        "description": "",
+        "format": {},
+        "formatType": "address1",
+        "name": "pcpStreetAddress",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PcpStreetAddress"
+      },
+      "pcpZipCode": {
+        "description": "",
+        "format": {},
+        "formatType": "zip",
+        "name": "pcpZipCode",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered - geo",
+        "type": "PcpZipCode"
+      },
+      "telephone": {
+        "description": "",
+        "format": {},
+        "formatType": "phone",
+        "name": "telephone",
+        "params": [],
+        "statisticalType": "Data - Categorical - unordered",
+        "type": "Telephone"
+      },
+      "title": {
+        "description": "",
+        "format": {
+          "examples": [
+            "D.D.S.",
+            "D.M.D.",
+            "D.O. ",
+            "D.P.M.",
+            "F.A.A.D.",
+            "F.A.A.E.M.",
+            "F.A.A.F.P.",
+            "F.A.C.C.",
+            "F.A.C.E.",
+            "F.A.C.E.P. ",
+            "M.D.",
+            "M.P.H.",
+            "N.P. "
+          ]
+        },
+        "formatType": "prime",
+        "name": "title",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Title"
+      },
+      "primaryCareName": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "primaryCareName",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PrimaryCareName"
+      }
+    }
+  },
+  {
+    "name": "HcapScore",
+    "description": "",
+    "formatType": "severity_score",
+    "initialQuantity": 5,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 10,
+          "min": 1,
+          "severityBad": 1,
+          "severityGood": 10,
+          "severityLevels": 5
+        },
+        "formatType": "severity_score",
+        "name": "displayValue",
+        "params": [
+          1,
+          10,
+          {
+            "severityGood": 10,
+            "severityBad": 1,
+            "severityLevels": 5
+          }
+        ],
+        "statisticalType": "Data - Numeric - NTG - Severity Ranking",
+        "type": "severity_score"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      },
+      "primaryCareId": {
+        "description": "",
+        "format": {},
+        "formatType": "uuid",
+        "name": "primaryCareId",
+        "params": ["PrimaryCareId", 20, []],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "UploadFile",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 20,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "file1.xls",
+            "file2.xls",
+            "file3.xls",
+            "file4.xls",
+            "file5.xls",
+            "file6.xls",
+            "file7.xls",
+            "file8.xls",
+            "file9.xls",
+            "file10.xls",
+            "file11.xls",
+            "file12.xls",
+            "file13.xls",
+            "file14.xls",
+            "file15.xls",
+            "file16.xls",
+            "file17.xls",
+            "file18.xls",
+            "file19.xls",
+            "file20.xls"
+          ]
+        },
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [
+          [
+            "file1.xls",
+            "file2.xls",
+            "file3.xls",
+            "file4.xls",
+            "file5.xls",
+            "file6.xls",
+            "file7.xls",
+            "file8.xls",
+            "file9.xls",
+            "file10.xls",
+            "file11.xls",
+            "file12.xls",
+            "file13.xls",
+            "file14.xls",
+            "file15.xls",
+            "file16.xls",
+            "file17.xls",
+            "file18.xls",
+            "file19.xls",
+            "file20.xls"
+          ]
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "oneOfEach"
+      },
+      "uploadedBy": {
+        "description": "",
+        "format": {},
+        "formatType": "email",
+        "name": "uploadedBy",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "UploadedBy"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "hour": "numeric",
+            "minute": "numeric",
+            "month": "2-digit",
+            "second": "numeric",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      }
+    }
+  },
+  {
+    "name": "UploadedBy",
+    "description": "",
+    "formatType": "email",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "email",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "email"
+      },
+      "uploadFile": {
+        "description": "",
+        "format": {
+          "examples": [
+            "file1.xls",
+            "file2.xls",
+            "file3.xls",
+            "file4.xls",
+            "file5.xls",
+            "file6.xls",
+            "file7.xls",
+            "file8.xls",
+            "file9.xls",
+            "file10.xls",
+            "file11.xls",
+            "file12.xls",
+            "file13.xls",
+            "file14.xls",
+            "file15.xls",
+            "file16.xls",
+            "file17.xls",
+            "file18.xls",
+            "file19.xls",
+            "file20.xls"
+          ]
+        },
+        "formatType": "prime",
+        "name": "uploadFile",
+        "params": ["UploadFile", 20, []],
+        "statisticalType": "Data - Categorical",
+        "type": "arrayOf"
+      }
+    }
+  }
+]

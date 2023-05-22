@@ -1,0 +1,22 @@
+{
+  "extends": ["../../.eslintrc", "plugin:cypress/recommended", "plugin:cypress/recommended"],
+  "rules": {
+    "@typescript-eslint/triple-slash-reference": 0
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "parserOptions": {
+        "project": ["apps/cloud-e2e/tsconfig.*?.json"]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}

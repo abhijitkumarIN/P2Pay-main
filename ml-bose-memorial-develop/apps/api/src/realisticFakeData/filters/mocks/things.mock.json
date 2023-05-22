@@ -1,0 +1,1569 @@
+{
+  "account": {
+    "actions": [],
+    "attributes": [],
+    "canAddValues": false,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "username",
+    "displayName": "Account",
+    "editable": false,
+    "format": {},
+    "formatType": "username",
+    "id": 104254,
+    "multiple": false,
+    "name": "account",
+    "settings": { "isEditable": false, "isFilledByEU": true },
+    "statisticalType": "Data - Categorical - free form",
+    "type": "username"
+  },
+  "barista": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "dccf37b0-222e-4c8b-a083-44fd248e062d",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": false, "isNullable": false, "name": "coffeeShop" },
+      { "hasMany": false, "isNullable": false, "name": "country" },
+      { "hasMany": false, "isNullable": false, "name": "location" },
+      { "hasMany": false, "isNullable": true, "name": "manager" },
+      { "hasMany": true, "isNullable": true, "name": "directReport" },
+      { "hasMany": false, "isNullable": false, "name": "salary" },
+      { "hasMany": false, "isNullable": false, "name": "paymentInformation" }
+    ],
+    "canAddValues": false,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "first_name",
+    "displayName": "Barista",
+    "editable": true,
+    "format": {},
+    "formatType": "first_name",
+    "id": 102784,
+    "multiple": true,
+    "name": "barista",
+    "prototypeId": 102783,
+    "settings": { "isEditable": true, "isFilledByEU": true },
+    "statisticalType": "Data - Categorical - free form",
+    "type": "first_name"
+  },
+  "beverage": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "dbf5cf19-88b2-4dde-ad66-e5edae688403",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "ca67f480-0f9d-4c38-bc95-ec8fe54e89dd",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": false, "isNullable": false, "name": "price" },
+      { "hasMany": true, "isNullable": false, "name": "menu" }
+    ],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "string",
+    "displayName": "Beverage",
+    "editable": true,
+    "format": { "examples": ["Coffee", "Hot Cocoa", "Beer", "Water", "Milk", "Juice"] },
+    "formatType": "prime",
+    "id": 102790,
+    "multiple": true,
+    "name": "beverage",
+    "prototypeId": 102789,
+    "settings": { "isEditable": true, "isFilledByEU": true },
+    "statisticalType": "Data - Categorical",
+    "type": "string"
+  },
+  "cafe": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "09083d9c-8e4f-42b2-881f-3d21e1cac95a",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "70e6c4d9-64a7-4d25-8826-42e6a85c8b71",
+        "name": "_delete_",
+        "type": "delete"
+      },
+      {
+        "areYouSure": true,
+        "isCustomModal": false,
+        "displayName": "Mark as Open",
+        "id": "06c88421-ebf3-458f-a8ed-c0b1413f4103",
+        "name": "markAsOpen",
+        "type": "custom"
+      },
+      {
+        "areYouSure": true,
+        "isCustomModal": false,
+        "displayName": "Start sale",
+        "id": "44e34320-f0f6-46d2-a790-dbdbbe491bd4",
+        "name": "startSale",
+        "type": "custom"
+      }
+    ],
+    "attributes": [
+      { "hasMany": true, "isNullable": false, "name": "coffee" },
+      { "hasMany": true, "isNullable": true, "name": "customer" },
+      { "hasMany": false, "isNullable": false, "name": "monthlyBrandingColor" },
+      { "hasMany": true, "isNullable": true, "name": "previousBrandingColors" },
+      { "hasMany": false, "isNullable": false, "name": "squareFootage" },
+      { "hasMany": false, "isNullable": true, "name": "description" },
+      { "hasMany": true, "isNullable": true, "name": "userWrittenReviews" },
+      { "hasMany": false, "isNullable": true, "name": "marketValue" },
+      { "hasMany": true, "isNullable": true, "name": "reviewLevel" },
+      { "hasMany": false, "isNullable": true, "name": "coffeeQuality" },
+      { "hasMany": true, "isNullable": true, "name": "userReview" },
+      { "hasMany": false, "isNullable": true, "name": "managerReview" },
+      { "hasMany": true, "isNullable": true, "name": "reviewScore" },
+      { "hasMany": false, "isNullable": true, "name": "occupationPercent" },
+      { "hasMany": true, "isNullable": true, "name": "efficiencyPercent" },
+      { "hasMany": false, "isNullable": false, "name": "inauguration" },
+      { "hasMany": true, "isNullable": true, "name": "importantEvent" },
+      { "hasMany": false, "isNullable": false, "name": "isOpen" },
+      { "hasMany": true, "isNullable": false, "name": "yearlyIncome" },
+      { "hasMany": false, "isNullable": false, "name": "menu" },
+      { "hasMany": true, "isNullable": false, "name": "table" },
+      { "hasMany": true, "isNullable": false, "name": "server" },
+      { "hasMany": true, "isNullable": false, "name": "barista" }
+    ],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "string",
+    "displayName": "Cafe",
+    "editable": true,
+    "format": {
+      "examples": [
+        "Capuchino Feliz",
+        "Expreso a Hogwarts",
+        "Triple Cafe con Leche",
+        "Mocachino Dulce",
+        "Chocolatito",
+        "Seriously Black Coffee",
+        "Sin Azucar",
+        "Latte mi Corazon",
+        "Machiatto"
+      ]
+    },
+    "formatType": "prime",
+    "id": 150377,
+    "multiple": true,
+    "name": "cafe",
+    "prototypeId": 102781,
+    "settings": { "isEditable": true, "isFilledByEU": true },
+    "statisticalType": "Data - Categorical",
+    "type": "string"
+  },
+  "childBlend": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "dffabc79-58b3-4ea3-a232-10e5af7ddae4",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "9dbfffaf-e36e-4442-8625-59033e60a008",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": true, "isNullable": false, "name": "coffeeShop" },
+      { "hasMany": false, "isNullable": true, "name": "rootBlend" }
+    ],
+    "canAddValues": true,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "string",
+    "displayName": "ChildBlend",
+    "editable": false,
+    "format": { "examples": ["Arabic", "Tropical", "Blend", "Yemen", "Nordic", "Brazilian"] },
+    "formatType": "prime",
+    "id": 139889,
+    "multiple": true,
+    "name": "childBlend",
+    "prototypeId": 139888,
+    "settings": {},
+    "statisticalType": "Data - Categorical",
+    "type": "string"
+  },
+  "coffee": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "e4511cb3-402c-474b-9690-390af8192474",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "22064035-36e7-43df-b64e-e149ce3467ef",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": true, "isNullable": false, "name": "coffeeShop" },
+      { "hasMany": false, "isNullable": true, "name": "rootBlend" },
+      { "hasMany": true, "isNullable": true, "name": "childBlend" }
+    ],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [{ "title": "Coffee", "slug": "coffee" }],
+    "dataType": "string",
+    "displayName": "Coffee",
+    "editable": true,
+    "format": { "examples": ["Arabic", "Tropical", "Blend", "Yemen", "Nordic", "Brazilian"] },
+    "formatType": "prime",
+    "id": 139888,
+    "multiple": true,
+    "name": "coffee",
+    "settings": { "isEditable": true, "isFilledByEU": true },
+    "statisticalType": "Data - Categorical",
+    "type": "string"
+  },
+  "coffeeQuality": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "4e0724cb-02fb-4667-acb4-efa09a8e3a90",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": false,
+    "canEditValues": true,
+    "crossLinking": [
+      { "title": "Coffee Quality Summary", "slug": "coffee-quality-summary" },
+      { "title": "Coffee Quality Research", "slug": "coffee-quality-research" }
+    ],
+    "dataType": "severity_level",
+    "displayName": "CoffeeQuality",
+    "editable": true,
+    "format": {
+      "min": 1,
+      "max": 4,
+      "examples": ["Gross", "Meh", "OK", "Coffeelicious"],
+      "severityBad": 1,
+      "severityGood": 4,
+      "severityLevels": 4
+    },
+    "formatType": "severity_level",
+    "id": 113105,
+    "multiple": true,
+    "name": "coffeeQuality",
+    "settings": { "isEditable": true },
+    "statisticalType": "Data - Categorical - ordered - Severity Ranking",
+    "type": "severity_level"
+  },
+  "coffeeShop": {
+    "actions": [
+      {
+        "areYouSure": true,
+        "isCustomModal": false,
+        "displayName": "Mark as Open",
+        "id": "06c88421-ebf3-458f-a8ed-c0b1413f4103",
+        "name": "markAsOpen",
+        "type": "custom"
+      },
+      {
+        "areYouSure": true,
+        "isCustomModal": false,
+        "displayName": "Start sale",
+        "id": "44e34320-f0f6-46d2-a790-dbdbbe491bd4",
+        "name": "startSale",
+        "type": "custom"
+      }
+    ],
+    "attributes": [
+      { "hasMany": true, "isNullable": false, "name": "coffee" },
+      { "hasMany": true, "isNullable": true, "name": "customer" },
+      { "hasMany": false, "isNullable": false, "name": "monthlyBrandingColor" },
+      { "hasMany": true, "isNullable": true, "name": "previousBrandingColors" },
+      { "hasMany": false, "isNullable": false, "name": "squareFootage" },
+      { "hasMany": false, "isNullable": true, "name": "description" },
+      { "hasMany": true, "isNullable": true, "name": "userWrittenReviews" },
+      { "hasMany": false, "isNullable": true, "name": "marketValue" },
+      { "hasMany": true, "isNullable": true, "name": "reviewLevel" },
+      { "hasMany": false, "isNullable": true, "name": "coffeeQuality" },
+      { "hasMany": true, "isNullable": true, "name": "userReview" },
+      { "hasMany": false, "isNullable": true, "name": "managerReview" },
+      { "hasMany": true, "isNullable": true, "name": "reviewScore" },
+      { "hasMany": false, "isNullable": true, "name": "occupationPercent" },
+      { "hasMany": true, "isNullable": true, "name": "efficiencyPercent" },
+      { "hasMany": false, "isNullable": false, "name": "inauguration" },
+      { "hasMany": true, "isNullable": true, "name": "importantEvent" },
+      { "hasMany": false, "isNullable": false, "name": "isOpen" },
+      { "hasMany": true, "isNullable": false, "name": "yearlyIncome" },
+      { "hasMany": false, "isNullable": false, "name": "menu" },
+      { "hasMany": true, "isNullable": false, "name": "table" },
+      { "hasMany": true, "isNullable": false, "name": "server" },
+      { "hasMany": true, "isNullable": false, "name": "barista" }
+    ],
+    "canAddValues": false,
+    "canEditValues": true,
+    "crossLinking": [
+      { "title": "Coffee Shop", "slug": "coffee-shop" },
+      { "title": "Coffee shop detail", "slug": "coffee-shop-detail" },
+      { "title": "Coffee Shop Customer", "slug": "coffee-shop-customer" }
+    ],
+    "dataType": "string",
+    "displayName": "CoffeeShop",
+    "editable": true,
+    "format": {
+      "examples": [
+        "Capuchino Feliz",
+        "Expreso a Hogwarts",
+        "Triple Cafe con Leche",
+        "Mocachino Dulce",
+        "Chocolatito",
+        "Seriously Black Coffee",
+        "Sin Azucar",
+        "Latte mi Corazon",
+        "Machiatto"
+      ]
+    },
+    "formatType": "prime",
+    "id": 102781,
+    "multiple": true,
+    "name": "coffeeShop",
+    "settings": { "isEditable": true, "isFilledByEU": true },
+    "statisticalType": "Data - Categorical",
+    "type": "string"
+  },
+  "collaborator": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "a5b3add2-5592-49a9-b401-e644d845554a",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "5f4317a7-db60-4883-a7c5-4e7676af6175",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": false, "isNullable": false, "name": "country" },
+      { "hasMany": false, "isNullable": false, "name": "location" },
+      { "hasMany": false, "isNullable": true, "name": "manager" },
+      { "hasMany": true, "isNullable": true, "name": "directReport" },
+      { "hasMany": false, "isNullable": false, "name": "salary" },
+      { "hasMany": false, "isNullable": false, "name": "paymentInformation" }
+    ],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [{ "title": "Collaborator", "slug": "collaborator" }],
+    "dataType": "first_name",
+    "displayName": "Collaborator",
+    "editable": true,
+    "format": {},
+    "formatType": "first_name",
+    "id": 102783,
+    "multiple": true,
+    "name": "collaborator",
+    "settings": { "isEditable": true, "isFilledByEU": true },
+    "statisticalType": "Data - Categorical - free form",
+    "type": "first_name"
+  },
+  "country": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "2acb10e0-299e-42cb-9182-48b6e8493eb1",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "2be7532b-e311-43ec-a754-eaa0d45c4cfb",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "collaborator" }],
+    "canAddValues": true,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "country",
+    "displayName": "Country",
+    "editable": false,
+    "format": {},
+    "formatType": "country",
+    "id": 150315,
+    "multiple": true,
+    "name": "country",
+    "settings": {},
+    "statisticalType": "Data - Categorical - unordered - geo",
+    "type": "country"
+  },
+  "customer": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "ddc86d6b-2e33-4d6d-bbfe-ae93f0232281",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "057235ea-fd7b-4510-b226-6c4536fa6de6",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": true, "isNullable": false, "name": "coffeeShop" },
+      { "hasMany": false, "isNullable": false, "name": "timestamp" }
+    ],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "first_name",
+    "displayName": "Customer",
+    "editable": true,
+    "format": {},
+    "formatType": "first_name",
+    "id": 128969,
+    "multiple": true,
+    "name": "customer",
+    "settings": { "isEditable": true, "isFilledByEU": true },
+    "statisticalType": "Data - Categorical - free form",
+    "type": "first_name"
+  },
+  "description": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "389c009e-96f0-45bd-a545-2df44ee80e93",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "b6f8c32d-41f8-4632-9a46-7d4cd70cdd69",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": false, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": true,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "description",
+    "displayName": "Description",
+    "editable": false,
+    "format": {},
+    "formatType": "description",
+    "id": 113113,
+    "multiple": true,
+    "name": "description",
+    "settings": {},
+    "statisticalType": "Data - Categorical - free form - longRichHtml",
+    "type": "description"
+  },
+  "directReport": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "1b5ef762-395b-4f15-b1ea-967d79a86c66",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "44265c6c-9cc6-48f9-a3aa-cebd82e979e2",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": false, "isNullable": false, "name": "country" },
+      { "hasMany": false, "isNullable": false, "name": "location" },
+      { "hasMany": false, "isNullable": true, "name": "manager" },
+      { "hasMany": false, "isNullable": false, "name": "salary" },
+      { "hasMany": false, "isNullable": false, "name": "paymentInformation" }
+    ],
+    "canAddValues": true,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "first_name",
+    "displayName": "DirectReport",
+    "editable": false,
+    "format": {},
+    "formatType": "first_name",
+    "id": 132894,
+    "multiple": true,
+    "name": "directReport",
+    "prototypeId": 102783,
+    "settings": {},
+    "statisticalType": "Data - Categorical - free form",
+    "type": "first_name"
+  },
+  "efficiencyPercent": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "3162b717-f96a-4db5-bb56-68aceb4042b2",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "9b16ed11-14bc-40c0-a697-f4edf83fe759",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "integer",
+    "displayName": "EfficiencyPercent",
+    "editable": true,
+    "format": { "min": 1, "max": 100 },
+    "formatType": "percent",
+    "id": 113098,
+    "multiple": true,
+    "name": "efficiencyPercent",
+    "settings": { "isEditable": true },
+    "statisticalType": "Data - Numeric - NTG - Percentage",
+    "type": "integer"
+  },
+  "importantEvent": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "1497ab12-26b8-4d97-9dd7-9673ea341af1",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "77e9a8bc-c32b-49da-8187-c22a16a4a014",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "timestamp",
+    "displayName": "ImportantEvent",
+    "editable": true,
+    "format": {},
+    "formatType": "timestamp",
+    "id": 113095,
+    "multiple": true,
+    "name": "importantEvent",
+    "settings": { "isEditable": true },
+    "statisticalType": "Data - Numeric - Temporal",
+    "type": "timestamp"
+  },
+  "inauguration": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "9841f015-cd9d-4554-a9cb-f1e929db6b60",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "fee75a51-c608-46c5-8301-981023b253aa",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "timestamp",
+    "displayName": "Inauguration",
+    "editable": true,
+    "format": {},
+    "formatType": "timestamp",
+    "id": 113096,
+    "multiple": true,
+    "name": "inauguration",
+    "settings": { "isEditable": true },
+    "statisticalType": "Data - Numeric - Temporal",
+    "type": "timestamp"
+  },
+  "isOpen": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "f6919e68-7f0c-42e9-b38d-312d71d33997",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "28f7f71b-fb79-434a-a39c-e91301519aeb",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "boolean",
+    "displayName": "IsOpen",
+    "editable": true,
+    "format": {},
+    "formatType": "boolean",
+    "id": 113094,
+    "multiple": true,
+    "name": "isOpen",
+    "settings": { "isEditable": true, "isFilledByEU": true },
+    "statisticalType": "Data - Categorical - Binary",
+    "type": "boolean"
+  },
+  "location": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "529ba561-35e3-4393-b057-7e05e2f7ab6a",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "9364c287-c054-4dfb-b1df-259dadde88c0",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "collaborator" }],
+    "canAddValues": true,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "city",
+    "displayName": "Location",
+    "editable": false,
+    "format": {},
+    "formatType": "city",
+    "id": 150138,
+    "multiple": true,
+    "name": "location",
+    "settings": {},
+    "statisticalType": "Data - Categorical - unordered - geo",
+    "type": "city"
+  },
+  "manager": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "46363be7-1646-45d3-8cfd-4828e0627b73",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "50930020-a50f-499d-883d-6c459e7969c7",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": false, "isNullable": false, "name": "country" },
+      { "hasMany": false, "isNullable": false, "name": "location" },
+      { "hasMany": true, "isNullable": true, "name": "directReport" },
+      { "hasMany": false, "isNullable": false, "name": "salary" },
+      { "hasMany": false, "isNullable": false, "name": "paymentInformation" }
+    ],
+    "canAddValues": true,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "first_name",
+    "displayName": "Manager",
+    "editable": false,
+    "format": {},
+    "formatType": "first_name",
+    "id": 132895,
+    "multiple": true,
+    "name": "manager",
+    "prototypeId": 102783,
+    "settings": {},
+    "statisticalType": "Data - Categorical - free form",
+    "type": "first_name"
+  },
+  "managerReview": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "71d01df4-5ddf-4407-a3c4-512d2d28e533",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "e06b07a3-c472-46a2-88a0-787949412bd6",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "severity_score",
+    "displayName": "ManagerReview",
+    "editable": true,
+    "format": { "min": 1, "max": 23, "severityBad": 1, "severityGood": 23, "severityLevels": 3 },
+    "formatType": "severity_score",
+    "id": 113103,
+    "multiple": true,
+    "name": "managerReview",
+    "settings": { "isEditable": true },
+    "statisticalType": "Data - Numeric - NTG - Severity Ranking",
+    "type": "severity_score"
+  },
+  "marketValue": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "929d6edf-39a8-40a2-ab7b-0e9f88f7254a",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "879c728e-8e91-4d19-99fc-cd14a9f8a661",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "integer",
+    "displayName": "MarketValue",
+    "editable": true,
+    "format": { "min": 1, "max": 100, "prefix": "$", "suffix": "k" },
+    "formatType": "USD",
+    "id": 113110,
+    "multiple": true,
+    "name": "marketValue",
+    "settings": { "isEditable": true },
+    "statisticalType": "Data - Numeric - NTG - Discrete",
+    "type": "integer"
+  },
+  "menu": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "8d57e53a-f1b5-446d-bf79-b2a26bd17bb8",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": true, "isNullable": false, "name": "product" },
+      { "hasMany": true, "isNullable": false, "name": "coffeeShop" }
+    ],
+    "canAddValues": false,
+    "canEditValues": true,
+    "crossLinking": [{ "title": "Menu Detail", "slug": "menu-detail" }],
+    "dataType": "integer",
+    "displayName": "Menu",
+    "editable": true,
+    "format": {},
+    "formatType": "integer",
+    "id": 102787,
+    "multiple": true,
+    "name": "menu",
+    "settings": { "isEditable": true, "isFilledByEU": true },
+    "statisticalType": "Data - Numeric - NTG - Discrete",
+    "type": "integer"
+  },
+  "monthlyBrandingColor": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "2009db43-7b06-45e3-bafb-d6a473030aff",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "d6adff8d-14b2-4d66-88fa-54d0b6dcf943",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "rgba",
+    "displayName": "MonthlyBrandingColor",
+    "editable": true,
+    "format": {},
+    "formatType": "rgba",
+    "id": 113257,
+    "multiple": true,
+    "name": "monthlyBrandingColor",
+    "settings": { "isEditable": true },
+    "statisticalType": "Data - Color",
+    "type": "rgba"
+  },
+  "occupationPercent": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "81c61ac1-3efe-4614-a407-93a557401e04",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "e6d91256-f3e0-49be-95a3-8eb8da272705",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": false, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "integer",
+    "displayName": "OccupationPercent",
+    "editable": true,
+    "format": { "min": 1, "max": 100 },
+    "formatType": "percent",
+    "id": 113100,
+    "multiple": true,
+    "name": "occupationPercent",
+    "settings": { "isEditable": true },
+    "statisticalType": "Data - Numeric - NTG - Percentage",
+    "type": "integer"
+  },
+  "pastry": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "68d9c703-4100-41d6-97f3-539d4db13963",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "baf06c15-6127-4930-a844-27a49c74a3aa",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": false, "isNullable": false, "name": "stockCount" },
+      { "hasMany": false, "isNullable": false, "name": "price" },
+      { "hasMany": true, "isNullable": false, "name": "menu" }
+    ],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "string",
+    "displayName": "Pastry",
+    "editable": true,
+    "format": {},
+    "formatType": "prime",
+    "id": 102791,
+    "multiple": true,
+    "name": "pastry",
+    "prototypeId": 102789,
+    "settings": { "isEditable": true, "isFilledByEU": true },
+    "statisticalType": "Data - Categorical",
+    "type": "string"
+  },
+  "paymentInformation": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "02199437-36cf-4ecb-9fde-38f5ff22d14b",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "b441bbf9-7f11-4760-8841-34cf350bab28",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": false, "isNullable": false, "name": "collaborator" }],
+    "canAddValues": true,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "card_number",
+    "displayName": "PaymentInformation",
+    "editable": false,
+    "format": {},
+    "formatType": "card_number",
+    "id": 102788,
+    "multiple": true,
+    "name": "paymentInformation",
+    "settings": {},
+    "statisticalType": "Data - Categorical - unordered",
+    "type": "card_number"
+  },
+  "previousBrandingColors": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "4113a75f-4522-4614-9571-f33ee241d6a5",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "60788c22-cd1a-4816-99f7-65bb639a004a",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": true,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "rgba",
+    "displayName": "PreviousBrandingColors",
+    "editable": false,
+    "format": {},
+    "formatType": "rgba",
+    "id": 113256,
+    "multiple": true,
+    "name": "previousBrandingColors",
+    "settings": {},
+    "statisticalType": "Data - Color",
+    "type": "rgba"
+  },
+  "price": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "fc1e94d4-cb11-4a85-8066-e429b6b0bd28",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "a3f034ef-d87a-4a47-bd0c-b0ac5a6af6b8",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "product" }],
+    "canAddValues": true,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "integer",
+    "displayName": "Price",
+    "editable": false,
+    "format": { "min": 1, "max": 100, "prefix": "$", "suffix": "k" },
+    "formatType": "USD",
+    "id": 102792,
+    "multiple": true,
+    "name": "price",
+    "settings": {},
+    "statisticalType": "Data - Numeric - NTG - Discrete",
+    "type": "integer"
+  },
+  "product": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "a2f33f58-57d2-4d89-ad17-02824eeb08e8",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "8ac2f992-6062-41f7-b721-259dec544b7c",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": false, "isNullable": false, "name": "price" },
+      { "hasMany": true, "isNullable": false, "name": "menu" }
+    ],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "string",
+    "displayName": "Product",
+    "editable": true,
+    "format": {},
+    "formatType": "prime",
+    "id": 102789,
+    "multiple": true,
+    "name": "product",
+    "settings": { "isEditable": true, "isFilledByEU": true },
+    "statisticalType": "Data - Categorical",
+    "type": "string"
+  },
+  "reviewLevel": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "cee29048-1423-472b-9017-ee19becdcd53",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "1fdcb27b-d7c7-49e7-b8ed-f86b6ed94fc1",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "severity_level",
+    "displayName": "ReviewLevel",
+    "editable": true,
+    "format": {
+      "min": 1,
+      "max": 5,
+      "examples": ["Terrible", "Bad", "Neutral", "Good", "Excellent"],
+      "severityBad": 1,
+      "severityGood": 5,
+      "severityLevels": 5
+    },
+    "formatType": "severity_level",
+    "id": 113109,
+    "multiple": true,
+    "name": "reviewLevel",
+    "settings": { "isEditable": true },
+    "statisticalType": "Data - Categorical - ordered - Severity Ranking",
+    "type": "severity_level"
+  },
+  "reviewScore": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "e8ccf285-32ea-4363-8000-b43ab8e6dea4",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "2235fb4b-a6e6-4615-a395-6ad4d601ad97",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "double",
+    "displayName": "ReviewScore",
+    "editable": true,
+    "format": { "min": -10, "max": 10 },
+    "formatType": "double",
+    "id": 113101,
+    "multiple": true,
+    "name": "reviewScore",
+    "settings": { "isEditable": true },
+    "statisticalType": "Data - Numeric - NTG - Continuous",
+    "type": "double"
+  },
+  "rootBlend": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "ca6590cf-1de7-4e0c-bc56-53796f7e713e",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "f136ec35-2bfc-4133-983f-e6ec55e53ec7",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": true, "isNullable": false, "name": "coffeeShop" },
+      { "hasMany": true, "isNullable": true, "name": "childBlend" }
+    ],
+    "canAddValues": true,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "string",
+    "displayName": "RootBlend",
+    "editable": false,
+    "format": { "examples": ["Arabic", "Tropical", "Blend", "Yemen", "Nordic", "Brazilian"] },
+    "formatType": "prime",
+    "id": 139890,
+    "multiple": true,
+    "name": "rootBlend",
+    "prototypeId": 139888,
+    "settings": {},
+    "statisticalType": "Data - Categorical",
+    "type": "string"
+  },
+  "salary": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "76419e21-02e9-4d0a-9185-720c48b9041e",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "08a17ac9-9a20-4276-9a55-1a9f494f4d38",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "collaborator" }],
+    "canAddValues": true,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "integer",
+    "displayName": "Salary",
+    "editable": false,
+    "format": { "min": 1, "max": 100, "prefix": "$", "suffix": "k" },
+    "formatType": "USD",
+    "id": 104245,
+    "multiple": true,
+    "name": "salary",
+    "settings": {},
+    "statisticalType": "Data - Numeric - NTG - Discrete",
+    "type": "integer"
+  },
+  "server": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "5d8d3a33-ee77-499f-aa3a-0ee7b11317bc",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "c2c77c46-2f2d-4c97-9ec0-2420c500e03a",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": true, "isNullable": false, "name": "table" },
+      { "hasMany": false, "isNullable": false, "name": "coffeeShop" },
+      { "hasMany": false, "isNullable": false, "name": "country" },
+      { "hasMany": false, "isNullable": false, "name": "location" },
+      { "hasMany": false, "isNullable": true, "name": "manager" },
+      { "hasMany": true, "isNullable": true, "name": "directReport" },
+      { "hasMany": false, "isNullable": false, "name": "salary" },
+      { "hasMany": false, "isNullable": false, "name": "paymentInformation" }
+    ],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [
+      { "title": "Server (Custom)", "slug": "server-custom" },
+      { "title": "Server detail page", "slug": "server-detail-page" }
+    ],
+    "dataType": "first_name",
+    "displayName": "Server",
+    "editable": true,
+    "format": {},
+    "formatType": "first_name",
+    "id": 102785,
+    "multiple": true,
+    "name": "server",
+    "prototypeId": 102783,
+    "settings": { "isEditable": true, "isFilledByEU": true },
+    "statisticalType": "Data - Categorical - free form",
+    "type": "first_name"
+  },
+  "squareFootage": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "112f96af-e8e1-41fc-be08-5a168e4e4b7e",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "6e798a47-2b55-4b15-9c34-a76e3e80b58e",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "double",
+    "displayName": "SquareFootage",
+    "editable": true,
+    "format": { "min": 500, "max": 3000 },
+    "formatType": "double",
+    "id": 113114,
+    "multiple": true,
+    "name": "squareFootage",
+    "settings": { "isEditable": true },
+    "statisticalType": "Data - Numeric - NTG - Continuous",
+    "type": "double"
+  },
+  "stockCount": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "75fd6186-a0d0-44b2-b28c-92c0422f57aa",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "ef9ea20e-9a14-4c7f-9a62-3576a5b9d750",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "pastry" }],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "integer",
+    "displayName": "StockCount",
+    "editable": true,
+    "format": { "min": -10, "max": 800 },
+    "formatType": "integer",
+    "id": 102793,
+    "multiple": true,
+    "name": "stockCount",
+    "settings": { "isEditable": true },
+    "statisticalType": "Data - Numeric - NTG - Discrete",
+    "type": "integer"
+  },
+  "table": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "902d82a1-5695-4882-821f-ef2c57c8102e",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "6744321b-32b6-4512-8b5d-33562a898347",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": false, "isNullable": false, "name": "server" },
+      { "hasMany": false, "isNullable": false, "name": "coffeeShop" }
+    ],
+    "canAddValues": true,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "integer",
+    "displayName": "Table",
+    "editable": true,
+    "format": {},
+    "formatType": "integer",
+    "id": 102786,
+    "multiple": true,
+    "name": "table",
+    "settings": { "isEditable": true, "isFilledByEU": true },
+    "statisticalType": "Data - Numeric - NTG - Discrete",
+    "type": "integer"
+  },
+  "timestamp": {
+    "actions": [],
+    "attributes": [],
+    "canAddValues": false,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "timestamp",
+    "displayName": "Timestamp",
+    "editable": false,
+    "format": {},
+    "formatType": "timestamp",
+    "id": 100337,
+    "multiple": true,
+    "name": "timestamp",
+    "settings": {},
+    "statisticalType": "Data - Numeric - Temporal",
+    "type": "timestamp"
+  },
+  "user": {
+    "actions": [],
+    "attributes": [],
+    "canAddValues": false,
+    "canEditValues": true,
+    "crossLinking": [],
+    "dataType": "username",
+    "displayName": "User",
+    "editable": true,
+    "format": {},
+    "formatType": "username",
+    "id": 104256,
+    "multiple": false,
+    "name": "user",
+    "settings": { "isEditable": true, "isFilledByEU": true },
+    "statisticalType": "Data - Categorical - free form",
+    "type": "username"
+  },
+  "userReview": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "17291b89-e425-479a-a31b-2e8b32fbc3db",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "4c0e7dca-4eda-428b-97e1-84b2005ec258",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [{ "hasMany": true, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": true,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "severity_score",
+    "displayName": "UserReview",
+    "editable": false,
+    "format": { "min": 1, "max": 100, "severityBad": 1, "severityGood": 100, "severityLevels": 3 },
+    "formatType": "severity_score",
+    "id": 113104,
+    "multiple": true,
+    "name": "userReview",
+    "settings": {},
+    "statisticalType": "Data - Numeric - NTG - Severity Ranking",
+    "type": "severity_score"
+  },
+  "userWrittenReviews": {
+    "actions": [],
+    "attributes": [{ "hasMany": false, "isNullable": false, "name": "coffeeShop" }],
+    "canAddValues": false,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "description",
+    "displayName": "UserWrittenReviews",
+    "editable": false,
+    "format": {},
+    "formatType": "description",
+    "id": 113111,
+    "multiple": true,
+    "name": "userWrittenReviews",
+    "settings": { "isEditable": false },
+    "statisticalType": "Data - Categorical - free form - longRichHtml",
+    "type": "description"
+  },
+  "yearlyIncome": {
+    "actions": [
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Add",
+        "id": "8e4bef7b-d948-4e0a-a69a-b3e0595cee2b",
+        "name": "add",
+        "type": "add"
+      },
+      {
+        "areYouSure": false,
+        "isCustomModal": false,
+        "displayName": "Delete",
+        "id": "5f75417b-923a-4c01-9c1b-76738a33ce03",
+        "name": "_delete_",
+        "type": "delete"
+      }
+    ],
+    "attributes": [
+      { "hasMany": false, "isNullable": false, "name": "timestamp" },
+      { "hasMany": false, "isNullable": false, "name": "coffeeShop" }
+    ],
+    "canAddValues": true,
+    "canEditValues": false,
+    "crossLinking": [],
+    "dataType": "integer",
+    "displayName": "YearlyIncome",
+    "editable": false,
+    "format": { "min": 1, "max": 100, "prefix": "$", "suffix": "k" },
+    "formatType": "USD",
+    "id": 104246,
+    "multiple": true,
+    "name": "yearlyIncome",
+    "settings": {},
+    "statisticalType": "Data - Numeric - NTG - Discrete",
+    "type": "integer"
+  }
+}
